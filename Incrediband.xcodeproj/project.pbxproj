@@ -13,6 +13,7 @@
 		842D6C9219B18478008CFCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842D6C9019B18478008CFCFD /* Main.storyboard */; };
 		842D6C9419B18478008CFCFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842D6C9319B18478008CFCFD /* Images.xcassets */; };
 		842D6CA019B18479008CFCFD /* IncredibandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D6C9F19B18479008CFCFD /* IncredibandTests.swift */; };
+		8460516119B18E550040F518 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460516019B18E550040F518 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		842D6C9919B18478008CFCFD /* IncredibandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IncredibandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		842D6C9E19B18478008CFCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842D6C9F19B18479008CFCFD /* IncredibandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncredibandTests.swift; sourceTree = "<group>"; };
+		8460516019B18E550040F518 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				842D6C8A19B18478008CFCFD /* AppDelegate.swift */,
 				842D6C8C19B18478008CFCFD /* FirstViewController.swift */,
 				842D6C8E19B18478008CFCFD /* SecondViewController.swift */,
+				8460516019B18E550040F518 /* ThirdViewController.swift */,
 				842D6C9019B18478008CFCFD /* Main.storyboard */,
 				842D6C9319B18478008CFCFD /* Images.xcassets */,
 				842D6C8819B18478008CFCFD /* Supporting Files */,
@@ -213,6 +216,7 @@
 			files = (
 				842D6C8F19B18478008CFCFD /* SecondViewController.swift in Sources */,
 				842D6C8B19B18478008CFCFD /* AppDelegate.swift in Sources */,
+				8460516119B18E550040F518 /* ThirdViewController.swift in Sources */,
 				842D6C8D19B18478008CFCFD /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +403,7 @@
 				842D6CA519B18479008CFCFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		842D6CA619B18479008CFCFD /* Build configuration list for PBXNativeTarget "IncredibandTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +412,7 @@
 				842D6CA819B18479008CFCFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
