@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Incrediband, Inc. All rights reserved.
 //
 
-import UIKit
+import UIKit;
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication!, didFinishLaunchingWithOptions launchOptions: NSDictionary!) -> Bool {
         // Override point for customization after application launch.
+        Parse.setApplicationId("oIb9FeVPJatHVobtNop1ro3bO7RLL2ofdcXlOQyY",clientKey: "yBvFHS14Wkh3DnmadOmLf5PvlB2dDIf6CEO5EvdS")
+        var object = PFObject(className: "TestClass")
+        object.addObject("Banana", forKey: "favoriteFood")
+        object.addObject("Chocolate", forKey: "favoriteIceCream")
+        object.saveInBackground()
         return true
     }
 
