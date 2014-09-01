@@ -27,6 +27,7 @@
 		8460517719B4B2870040F518 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8460517619B4B2870040F518 /* Parse.framework */; };
 		8460517919B4B28B0040F518 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8460517819B4B28B0040F518 /* ParseFacebookUtils.framework */; };
 		8460517B19B4B2900040F518 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8460517A19B4B2900040F518 /* Bolts.framework */; };
+		8460518019B4BE550040F518 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8460517F19B4BE550040F518 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		8460517819B4B28B0040F518 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../../Downloads/parse-library-1.2.21/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
 		8460517A19B4B2900040F518 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1.2.21/Bolts.framework"; sourceTree = "<group>"; };
 		8460517C19B4B2C40040F518 /* Incrediband-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Incrediband-Bridging-Header.h"; sourceTree = "<group>"; };
+		8460517F19B4BE550040F518 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				8460516D19B4B2500040F518 /* CFNetwork.framework in Frameworks */,
 				8460516E19B4B2500040F518 /* CoreGraphics.framework in Frameworks */,
 				8460516F19B4B2500040F518 /* CoreLocation.framework in Frameworks */,
+				8460518019B4BE550040F518 /* FacebookSDK.framework in Frameworks */,
 				8460517019B4B2500040F518 /* libz.dylib in Frameworks */,
 				8460517119B4B2500040F518 /* MobileCoreServices.framework in Frameworks */,
 				8460517719B4B2870040F518 /* Parse.framework in Frameworks */,
@@ -101,6 +104,7 @@
 		842D6C7C19B18478008CFCFD = {
 			isa = PBXGroup;
 			children = (
+				8460517F19B4BE550040F518 /* FacebookSDK.framework */,
 				8460517A19B4B2900040F518 /* Bolts.framework */,
 				8460517819B4B28B0040F518 /* ParseFacebookUtils.framework */,
 				8460517619B4B2870040F518 /* Parse.framework */,
@@ -391,6 +395,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/ajaywaghray/Downloads/parse-library-1.2.21",
+					/Users/ajaywaghray/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Incrediband/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -409,6 +414,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/ajaywaghray/Downloads/parse-library-1.2.21",
+					/Users/ajaywaghray/Documents/FacebookSDK,
 				);
 				INFOPLIST_FILE = Incrediband/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
