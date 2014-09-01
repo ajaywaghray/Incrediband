@@ -11,9 +11,9 @@ import Foundation
 // Here is the class used to hold info when the user is onboarding into Incrediband
 class IncredibandOnboard {
 
-    let instrument: String
-    let location: Double
-    let skillLevel: String
+    var instrument: String
+    var location: Double
+    var skillLevel: String
     
     // Initializing variables in the onboarding class like a boss.
     init(instrument:String, location:Double, skillLevel:String) {
