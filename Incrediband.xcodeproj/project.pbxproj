@@ -29,6 +29,7 @@
 		8460517B19B4B2900040F518 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8460517A19B4B2900040F518 /* Bolts.framework */; };
 		8460518019B4BE550040F518 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8460517F19B4BE550040F518 /* FacebookSDK.framework */; };
 		8460518219B4BFDF0040F518 /* IncredibandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460518119B4BFDF0040F518 /* IncredibandModel.swift */; };
+		8460518419B4C7F20040F518 /* WelcomeFBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460518319B4C7F20040F518 /* WelcomeFBViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		8460517C19B4B2C40040F518 /* Incrediband-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Incrediband-Bridging-Header.h"; sourceTree = "<group>"; };
 		8460517F19B4BE550040F518 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		8460518119B4BFDF0040F518 /* IncredibandModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncredibandModel.swift; sourceTree = "<group>"; };
+		8460518319B4C7F20040F518 /* WelcomeFBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeFBViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				842D6C8E19B18478008CFCFD /* SecondViewController.swift */,
 				8460516019B18E550040F518 /* ThirdViewController.swift */,
 				842D6C9019B18478008CFCFD /* Main.storyboard */,
+				8460518319B4C7F20040F518 /* WelcomeFBViewController.swift */,
 				842D6C9319B18478008CFCFD /* Images.xcassets */,
 				842D6C8819B18478008CFCFD /* Supporting Files */,
 				8460518119B4BFDF0040F518 /* IncredibandModel.swift */,
@@ -278,6 +281,7 @@
 				842D6C8F19B18478008CFCFD /* SecondViewController.swift in Sources */,
 				842D6C8B19B18478008CFCFD /* AppDelegate.swift in Sources */,
 				8460518219B4BFDF0040F518 /* IncredibandModel.swift in Sources */,
+				8460518419B4C7F20040F518 /* WelcomeFBViewController.swift in Sources */,
 				8460516119B18E550040F518 /* ThirdViewController.swift in Sources */,
 				842D6C8D19B18478008CFCFD /* FirstViewController.swift in Sources */,
 			);

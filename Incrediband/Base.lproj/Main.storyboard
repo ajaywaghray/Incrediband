@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="1675.5" y="-154.5"/>
         </scene>
-        <!--View Controller-->
+        <!--WelcomeFB View Controller-->
         <scene sceneID="Sbo-vi-4Yb">
             <objects>
-                <viewController id="2vg-9W-2ec" sceneMemberID="viewController">
+                <viewController id="2vg-9W-2ec" customClass="WelcomeFBViewController" customModule="Incrediband" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i6y-GC-hJ4"/>
                         <viewControllerLayoutGuide type="bottom" id="Rz4-Uq-PWQ"/>
@@ -106,8 +106,28 @@
                     <view key="view" contentMode="scaleToFill" id="PfM-xN-196">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9N5-d1-But">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="42" y="455" width="316" height="65"/>
+                                </variation>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="9N5-d1-But"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="9N5-d1-But"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZW-q9-KOv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

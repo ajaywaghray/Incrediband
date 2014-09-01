@@ -21,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         object.addObject("Banana", forKey: "favoriteFood")
         object.addObject("Chocolate", forKey: "favoriteIceCream")
         object.saveInBackground()
+        
+        FBLoginView.self
+        FBProfilePictureView.self
+        
         return true
     }
 
