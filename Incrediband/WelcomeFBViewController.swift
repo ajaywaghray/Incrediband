@@ -12,7 +12,10 @@ class WelcomeFBViewController: UIViewController, FBLoginViewDelegate {
     
     @IBOutlet var fbLoginView : FBLoginView!
     
+    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Incrediband_splash2home_071514 2"]];
+    
     override func viewDidLoad() {
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Incrediband_splash2home_071514 2.png"))
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         

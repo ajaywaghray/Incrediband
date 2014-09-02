@@ -107,23 +107,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mfg-ju-pZG" customClass="FBLoginView">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Q0x-8d-Qhr">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-16" y="-29" width="368" height="604"/>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sa7-uM-UvD" customClass="FBLoginView">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="484" width="282" height="70"/>
+                                    <rect key="frame" x="27" y="485" width="282" height="70"/>
                                 </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Mfg-ju-pZG"/>
+                                <exclude reference="Q0x-8d-Qhr"/>
+                                <exclude reference="sa7-uM-UvD"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Mfg-ju-pZG"/>
+                                <include reference="Q0x-8d-Qhr"/>
+                                <include reference="sa7-uM-UvD"/>
                             </mask>
                         </variation>
                     </view>
@@ -266,6 +274,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="640" height="1136"/>
         <image name="first" width="30" height="30"/>
     </resources>
 </document>
