@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -&gt; Bool {
+    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
     // Override point for customization after application launch.
     
     FBLoginView.self
@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     return true
     }
     
-    func application(application: UIApplication, openURL url: NSURL, sourceApplication: NSString?, annotation: AnyObject) -&gt; Bool {
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: NSString?, annotation: AnyObject) -> Bool {
     var wasHandled:Bool = FBAppCall.handleOpenURL(url, sourceApplication: sourceApplication)
     return wasHandled
     }
