@@ -297,18 +297,28 @@
                                     <segue destination="7V4-Dl-eku" kind="show" id="myg-Oy-fAz"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pxx-nI-VH5">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="109" y="149" width="109" height="32"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Zcd-X9-h0X"/>
                                 <exclude reference="aMH-UU-snb"/>
+                                <exclude reference="Pxx-nI-VH5"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Zcd-X9-h0X"/>
                                 <include reference="aMH-UU-snb"/>
+                                <include reference="Pxx-nI-VH5"/>
                             </mask>
                         </variation>
                     </view>
