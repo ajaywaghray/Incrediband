@@ -11,8 +11,7 @@ import UIKit
 class WelcomeFBViewController: UIViewController, FBLoginViewDelegate {
     
     @IBOutlet var fbLoginView : FBLoginView!
-    
-    //self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Incrediband_splash2home_071514 2"]];
+    let userOnboard = IncredibandOnboard(instrument: "?", location: 0, skillLevel: "?")
     
     override func viewDidLoad() {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Incrediband_splash2home_071514 2.png"))
@@ -20,6 +19,12 @@ class WelcomeFBViewController: UIViewController, FBLoginViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
     }
+    
+    //override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+      //  if segue.identifier == "mySegue" {
+            
+        //}
+    //}
     
     // Facebook Delegate Methods
     

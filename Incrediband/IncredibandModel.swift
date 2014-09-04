@@ -23,3 +23,4 @@ class IncredibandOnboard {
     }
 }
 
+let userOnboard = IncredibandOnboard(instrument: "?", location: 0, skillLevel: "?")

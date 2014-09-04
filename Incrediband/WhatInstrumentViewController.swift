@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class WhatInstrumentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +18,19 @@ class ThirdViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func guitarSelected(sender: AnyObject){
+        userOnboard.instrument = "guitar"
+    }
+    @IBAction func bassSelected(sender: AnyObject){
+        userOnboard.instrument = "bass"
+    }
+    @IBAction func drumsSelected(sender: AnyObject){
+        userOnboard.instrument = "drums"
+    }
+    @IBAction func vocalsSelected(sender: AnyObject){
+        userOnboard.instrument = "vocals"
     }
     
     

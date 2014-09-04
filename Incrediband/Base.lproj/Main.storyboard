@@ -121,18 +121,32 @@
                                     <rect key="frame" x="27" y="485" width="282" height="70"/>
                                 </variation>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJu-xM-bkh">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="145" y="435" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="tBU-4Q-cPj" kind="show" identifier="" id="ypU-xE-h2H"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Q0x-8d-Qhr"/>
                                 <exclude reference="sa7-uM-UvD"/>
+                                <exclude reference="zJu-xM-bkh"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Q0x-8d-Qhr"/>
                                 <include reference="sa7-uM-UvD"/>
+                                <include reference="zJu-xM-bkh"/>
                             </mask>
                         </variation>
                     </view>
@@ -142,10 +156,10 @@
             </objects>
             <point key="canvasLocation" x="-2814" y="0.0"/>
         </scene>
-        <!--View Controller-->
+        <!--What Instrument View Controller-->
         <scene sceneID="UFW-JZ-CrS">
             <objects>
-                <viewController id="tBU-4Q-cPj" sceneMemberID="viewController">
+                <viewController id="tBU-4Q-cPj" customClass="WhatInstrumentViewController" customModule="Incrediband" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zZM-U9-jAz"/>
                         <viewControllerLayoutGuide type="bottom" id="ozh-Om-fmq"/>
@@ -156,25 +170,95 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instrumentBackground" translatesAutoresizingMaskIntoConstraints="NO" id="P0U-m2-51p">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <gestureRecognizers/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="-46" width="331" height="662"/>
                                 </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="G8p-mD-mXr" appends="YES" id="wgC-66-yhN"/>
+                                </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Wu-mK-X4Z">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="29" y="90" width="104" height="128"/>
+                                </variation>
+                                <connections>
+                                    <action selector="guitarSelected:" destination="tBU-4Q-cPj" eventType="touchDown" id="ml1-CZ-ffc"/>
+                                    <segue destination="NmY-ye-en8" kind="show" id="5wS-yG-0lb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGI-dC-zho">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="183" y="90" width="131" height="128"/>
+                                </variation>
+                                <connections>
+                                    <action selector="bassSelected:" destination="tBU-4Q-cPj" eventType="touchDown" id="n51-lm-6dN"/>
+                                    <segue destination="NmY-ye-en8" kind="show" id="3A7-tA-1wn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaR-E1-p7S">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="286" width="136" height="134"/>
+                                </variation>
+                                <connections>
+                                    <action selector="drumsSelected:" destination="tBU-4Q-cPj" eventType="touchDown" id="O6D-g6-h8l"/>
+                                    <segue destination="NmY-ye-en8" kind="show" id="vaI-vA-7Ub"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAH-xF-fFH">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="183" y="286" width="131" height="137"/>
+                                </variation>
+                                <connections>
+                                    <action selector="vocalsSelected:" destination="tBU-4Q-cPj" eventType="touchDown" id="MRg-4x-Inp"/>
+                                    <segue destination="NmY-ye-en8" kind="show" id="g1D-eS-S4f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="P0U-m2-51p"/>
+                                <exclude reference="0Wu-mK-X4Z"/>
+                                <exclude reference="lGI-dC-zho"/>
+                                <exclude reference="AaR-E1-p7S"/>
+                                <exclude reference="cAH-xF-fFH"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="P0U-m2-51p"/>
+                                <include reference="0Wu-mK-X4Z"/>
+                                <include reference="lGI-dC-zho"/>
+                                <include reference="AaR-E1-p7S"/>
+                                <include reference="cAH-xF-fFH"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="gWc-Ug-Iw2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eau-j6-fmQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="G8p-mD-mXr"/>
             </objects>
             <point key="canvasLocation" x="-2124" y="0.0"/>
         </scene>
@@ -191,6 +275,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="mcB-C6-daV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlh-ik-E2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -297,4 +382,7 @@
         <image name="first" width="30" height="30"/>
         <image name="instrumentBackground" width="640" height="1136"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="g1D-eS-S4f"/>
+    </inferredMetricsTieBreakers>
 </document>
