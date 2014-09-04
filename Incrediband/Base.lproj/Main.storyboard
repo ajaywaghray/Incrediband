@@ -273,13 +273,51 @@
                     <view key="view" contentMode="scaleToFill" id="ZXe-rs-FDL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="where" translatesAutoresizingMaskIntoConstraints="NO" id="Zcd-X9-h0X">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="-44" width="326" height="653"/>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rRa-CA-64z" appends="YES" id="27a-ca-bez"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMH-UU-snb">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="204" width="303" height="127"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="7V4-Dl-eku" kind="show" id="myg-Oy-fAz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Zcd-X9-h0X"/>
+                                <exclude reference="aMH-UU-snb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Zcd-X9-h0X"/>
+                                <include reference="aMH-UU-snb"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="mcB-C6-daV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tlh-ik-E2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="rRa-CA-64z"/>
             </objects>
-            <point key="canvasLocation" x="-1483" y="6"/>
+            <point key="canvasLocation" x="-1483.5" y="0.0"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="4bd-jE-vmW">
@@ -292,12 +330,45 @@
                     <view key="view" contentMode="scaleToFill" id="lLU-wi-baL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skill" translatesAutoresizingMaskIntoConstraints="NO" id="IXk-fa-UeL">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="-60" width="328" height="684"/>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1Z-38-S6f">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="47" y="487" width="239" height="44"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="49e-Tb-3d3" kind="show" id="PE3-13-Bnu"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="IXk-fa-UeL"/>
+                                <exclude reference="w1Z-38-S6f"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="IXk-fa-UeL"/>
+                                <include reference="w1Z-38-S6f"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JsG-x6-O6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-851" y="6"/>
+            <point key="canvasLocation" x="-852" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -381,6 +452,8 @@
         <image name="background" width="640" height="1136"/>
         <image name="first" width="30" height="30"/>
         <image name="instrumentBackground" width="640" height="1136"/>
+        <image name="skill" width="640" height="1136"/>
+        <image name="where" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="g1D-eS-S4f"/>
