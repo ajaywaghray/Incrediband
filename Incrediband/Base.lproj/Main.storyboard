@@ -400,11 +400,11 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--First-->
+        <!--Profile-->
         <scene sceneID="ha9-4w-LzI">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tBT-r1-eIK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="first" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="N2m-Qz-lgT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -419,11 +419,11 @@
             </objects>
             <point key="canvasLocation" x="757.5" y="-836.25"/>
         </scene>
-        <!--Item-->
+        <!--Matches-->
         <scene sceneID="v43-kc-PTD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FdW-7I-MZJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="aSm-jl-HPZ"/>
+                    <tabBarItem key="tabBarItem" title="Matches" image="first" id="aSm-jl-HPZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aGV-k5-rgw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -438,11 +438,11 @@
             </objects>
             <point key="canvasLocation" x="757.5" y="-154.5"/>
         </scene>
-        <!--Item-->
+        <!--Messages-->
         <scene sceneID="meg-Mz-j8q">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WjY-2k-NIN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="qkL-nB-kog"/>
+                    <tabBarItem key="tabBarItem" title="Messages" image="first" id="qkL-nB-kog"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="a9S-Vm-ja0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
