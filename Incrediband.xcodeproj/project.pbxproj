@@ -30,6 +30,7 @@
 		8460518019B4BE550040F518 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8460517F19B4BE550040F518 /* FacebookSDK.framework */; };
 		8460518219B4BFDF0040F518 /* IncredibandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460518119B4BFDF0040F518 /* IncredibandModel.swift */; };
 		8460518419B4C7F20040F518 /* WelcomeFBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460518319B4C7F20040F518 /* WelcomeFBViewController.swift */; };
+		84B9D4CF19B96C34001610E1 /* WherePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9D4CE19B96C34001610E1 /* WherePlayViewController.swift */; };
 		84CA2DB319B6A6E000777BEA /* WhatInstrumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA2DB219B6A6E000777BEA /* WhatInstrumentViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		8460517F19B4BE550040F518 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		8460518119B4BFDF0040F518 /* IncredibandModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncredibandModel.swift; sourceTree = "<group>"; };
 		8460518319B4C7F20040F518 /* WelcomeFBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeFBViewController.swift; sourceTree = "<group>"; };
+		84B9D4CE19B96C34001610E1 /* WherePlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WherePlayViewController.swift; sourceTree = "<group>"; };
 		84CA2DB219B6A6E000777BEA /* WhatInstrumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatInstrumentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +150,7 @@
 				842D6C8E19B18478008CFCFD /* SecondViewController.swift */,
 				8460516019B18E550040F518 /* ThirdViewController.swift */,
 				842D6C9019B18478008CFCFD /* Main.storyboard */,
+				84B9D4CE19B96C34001610E1 /* WherePlayViewController.swift */,
 				84CA2DB219B6A6E000777BEA /* WhatInstrumentViewController.swift */,
 				8460518319B4C7F20040F518 /* WelcomeFBViewController.swift */,
 				842D6C9319B18478008CFCFD /* Images.xcassets */,
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B9D4CF19B96C34001610E1 /* WherePlayViewController.swift in Sources */,
 				842D6C8F19B18478008CFCFD /* SecondViewController.swift in Sources */,
 				842D6C8B19B18478008CFCFD /* AppDelegate.swift in Sources */,
 				8460518219B4BFDF0040F518 /* IncredibandModel.swift in Sources */,
