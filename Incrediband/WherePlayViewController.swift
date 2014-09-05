@@ -7,18 +7,15 @@
 //
 
 import UIKit
-import foundation
+import CoreLocation
+//import foundation
 
 class WherePlayViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        locationManager = CLLocationManager()
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
-        locationManager.startUpdatingLocation()
+        //locationManager = CLLocationManager()
     }
     
     override func didReceiveMemoryWarning() {
