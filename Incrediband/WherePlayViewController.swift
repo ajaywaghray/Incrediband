@@ -12,6 +12,8 @@ import CoreLocation
 
 class WherePlayViewController: UIViewController {
     
+    @IBOutlet var zipCode : UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,11 +22,12 @@ class WherePlayViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        //Dispose of any resources that can be recreated.
     }
     
-    @IBAction func locationSelected(sender: AnyObject){
-        userOnboard.instrument = "guitar"
+    @IBAction func UITextFieldTextDidChangeNotification(sender: AnyObject){
+        let a:Int? = zipCode.text.toInt()
+        userOnboard.location = a!
     }
     
 }

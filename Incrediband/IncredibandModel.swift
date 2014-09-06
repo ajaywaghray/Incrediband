@@ -12,11 +12,11 @@ import Foundation
 class IncredibandOnboard {
 
     var instrument: String
-    var location: Double
+    var location: Int
     var skillLevel: String
     
     // Initializing variables in the onboarding class like a boss.
-    init(instrument:String, location:Double, skillLevel:String) {
+    init(instrument:String, location:Int, skillLevel:String) {
         self.instrument = instrument
         self.location = location
         self.skillLevel = skillLevel
