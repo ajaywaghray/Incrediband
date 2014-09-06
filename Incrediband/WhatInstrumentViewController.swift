@@ -20,6 +20,7 @@ class WhatInstrumentViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // Collects instrument type from the view and stores it in the model
     @IBAction func guitarSelected(sender: AnyObject){
         userOnboard.instrument = "guitar"
     }

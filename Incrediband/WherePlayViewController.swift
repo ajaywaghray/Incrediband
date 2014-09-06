@@ -25,6 +25,7 @@ class WherePlayViewController: UIViewController {
         //Dispose of any resources that can be recreated.
     }
     
+    //Checks for completed input, changes input to a number, then adds number to the user's location in the model
     @IBAction func UITextFieldTextDidChangeNotification(sender: AnyObject){
         let a:Int? = zipCode.text.toInt()
         userOnboard.location = a!

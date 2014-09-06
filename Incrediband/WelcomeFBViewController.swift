@@ -32,6 +32,7 @@ class WelcomeFBViewController: UIViewController, FBLoginViewDelegate {
         println("User Logged In")
     }
     
+    //This is collecting all of the info from Facebook about the user
     func loginViewFetchedUserInfo(loginView : FBLoginView!, user: FBGraphUser) {
         println("User: \(user)")
         println("User ID: \(user.objectID)")
