@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841B914419BBA90900A9BA6C /* SkillLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B914319BBA90900A9BA6C /* SkillLevelViewController.swift */; };
 		842D6C8B19B18478008CFCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D6C8A19B18478008CFCFD /* AppDelegate.swift */; };
 		842D6C8D19B18478008CFCFD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D6C8C19B18478008CFCFD /* FirstViewController.swift */; };
 		842D6C8F19B18478008CFCFD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D6C8E19B18478008CFCFD /* SecondViewController.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		841B914319BBA90900A9BA6C /* SkillLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillLevelViewController.swift; sourceTree = "<group>"; };
 		842D6C8519B18478008CFCFD /* Incrediband.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Incrediband.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842D6C8919B18478008CFCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842D6C8A19B18478008CFCFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				842D6C8E19B18478008CFCFD /* SecondViewController.swift */,
 				8460516019B18E550040F518 /* ThirdViewController.swift */,
 				842D6C9019B18478008CFCFD /* Main.storyboard */,
+				841B914319BBA90900A9BA6C /* SkillLevelViewController.swift */,
 				84B9D4CE19B96C34001610E1 /* WherePlayViewController.swift */,
 				84CA2DB219B6A6E000777BEA /* WhatInstrumentViewController.swift */,
 				8460518319B4C7F20040F518 /* WelcomeFBViewController.swift */,
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				841B914419BBA90900A9BA6C /* SkillLevelViewController.swift in Sources */,
 				84B9D4CF19B96C34001610E1 /* WherePlayViewController.swift in Sources */,
 				842D6C8F19B18478008CFCFD /* SecondViewController.swift in Sources */,
 				842D6C8B19B18478008CFCFD /* AppDelegate.swift in Sources */,

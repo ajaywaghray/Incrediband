@@ -300,7 +300,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pxx-nI-VH5">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="109" y="149" width="109" height="32"/>
                                 </variation>
@@ -344,10 +344,10 @@
             </objects>
             <point key="canvasLocation" x="-1483.5" y="0.0"/>
         </scene>
-        <!--View Controller-->
+        <!--Skill Level View Controller-->
         <scene sceneID="4bd-jE-vmW">
             <objects>
-                <viewController id="7V4-Dl-eku" sceneMemberID="viewController">
+                <viewController id="7V4-Dl-eku" customClass="SkillLevelViewController" customModule="Incrediband" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uvk-JP-juF"/>
                         <viewControllerLayoutGuide type="bottom" id="Rx8-Qr-EC1"/>
@@ -372,6 +372,7 @@
                                     <rect key="frame" x="47" y="487" width="239" height="44"/>
                                 </variation>
                                 <connections>
+                                    <action selector="UploadModel:" destination="7V4-Dl-eku" eventType="touchDown" id="PYF-jN-Qjl"/>
                                     <segue destination="49e-Tb-3d3" kind="show" id="PE3-13-Bnu"/>
                                 </connections>
                             </button>
