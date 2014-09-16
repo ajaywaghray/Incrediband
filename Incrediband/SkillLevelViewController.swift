@@ -22,18 +22,18 @@ class SkillLevelViewController: UIViewController {
     
     // This uploads all the data in the model to Parse
     @IBAction func UploadModel(sender: AnyObject){
-        var userUpload = PFObject(className: "User")
-        userUpload.setObject(userOnboard.instrument, forKey: "Instrument")
-        userUpload.setObject(userOnboard.location, forKey: "Location")
-        userUpload.setObject(userOnboard.skillLevel, forKey: "Skill Level")
-        userUpload.saveInBackgroundWithBlock {
-            (success: Bool!, error: NSError!) -> Void in
-            if (success != nil) {
-                NSLog("Object created with id: \(userUpload.objectId)")
-            } else {
-                NSLog("%@", error)
-            }
-        }
+        //var userUpload = PFObject(className: "User")
+        //userUpload.setObject(userOnboard.instrument, forKey: "Instrument")
+        //userUpload.setObject(userOnboard.location, forKey: "Location")
+        //userUpload.setObject(userOnboard.skillLevel, forKey: "Skill Level")
+        //userUpload.saveInBackgroundWithBlock {
+            //(success: Bool!, error: NSError!) -> Void in
+            //if (success != nil) {
+                //NSLog("Object created with id: \(userUpload.objectId)")
+            //} else {
+                //NSLog("%@", error)
+            //}
+        //}
     }
     
     
