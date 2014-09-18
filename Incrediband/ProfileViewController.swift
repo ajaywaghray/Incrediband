@@ -21,6 +21,9 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        userName.text = userInfo.userName
+        userSkill.text = userInfo.skillLevel
+        userInstrument.text = userInfo.instrument
     }
     
     override func didReceiveMemoryWarning() {

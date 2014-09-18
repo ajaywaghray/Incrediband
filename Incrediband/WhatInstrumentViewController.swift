@@ -22,16 +22,16 @@ class WhatInstrumentViewController: UIViewController {
     
     // Collects instrument type from the view and stores it in the model
     @IBAction func guitarSelected(sender: AnyObject){
-        userInfo.instrument = "guitar"
+        userInfo.instrument = "Guitar"
     }
     @IBAction func bassSelected(sender: AnyObject){
-        userInfo.instrument = "bass"
+        userInfo.instrument = "Bass"
     }
     @IBAction func drumsSelected(sender: AnyObject){
-        userInfo.instrument = "drums"
+        userInfo.instrument = "Drums"
     }
     @IBAction func vocalsSelected(sender: AnyObject){
-        userInfo.instrument = "vocals"
+        userInfo.instrument = "Vocals"
     }
     
     
