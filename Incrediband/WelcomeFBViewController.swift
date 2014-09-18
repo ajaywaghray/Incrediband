@@ -19,12 +19,6 @@ class WelcomeFBViewController: UIViewController, FBLoginViewDelegate {
         
     }
     
-    //override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-      //  if segue.identifier == "mySegue" {
-            
-        //}
-    //}
-    
     // Facebook Delegate Methods
     
     func loginViewShowingLoggedInUser(loginView : FBLoginView!) {

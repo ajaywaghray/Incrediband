@@ -11,6 +11,13 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+    @IBOutlet var profilePhoto : UIImageView!
+    @IBOutlet var instrumentBackground : UIImageView!
+    @IBOutlet var userName : UILabel!
+    @IBOutlet var userSkill : UILabel!
+    @IBOutlet var userInstrument : UILabel!
+    @IBOutlet var userLocation : UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

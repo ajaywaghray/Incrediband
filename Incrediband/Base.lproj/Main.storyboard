@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="14A361p" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2vg-9W-2ec">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
     </dependencies>
     <scenes>
@@ -50,13 +51,28 @@
                                     <rect key="frame" x="161" y="380" width="78" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expert Drums" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Jr-LU-tbT">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-Xs-b6p">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="148" y="357" width="106" height="21"/>
+                                    <rect key="frame" x="148" y="356" width="42" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIy-ia-N5f">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="198" y="356" width="42" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -72,7 +88,8 @@
                                 <exclude reference="unY-hc-Hy7"/>
                                 <exclude reference="UY4-e4-Osc"/>
                                 <exclude reference="SSN-CD-4o4"/>
-                                <exclude reference="1Jr-LU-tbT"/>
+                                <exclude reference="gT5-Xs-b6p"/>
+                                <exclude reference="aIy-ia-N5f"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -81,11 +98,20 @@
                                 <include reference="unY-hc-Hy7"/>
                                 <include reference="UY4-e4-Osc"/>
                                 <include reference="SSN-CD-4o4"/>
-                                <include reference="1Jr-LU-tbT"/>
+                                <include reference="gT5-Xs-b6p"/>
+                                <include reference="aIy-ia-N5f"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" id="g9Y-PC-cvF"/>
+                    <connections>
+                        <outlet property="instrumentBackground" destination="Vea-Bz-kXH" id="vvz-Hz-ZGT"/>
+                        <outlet property="profilePhoto" destination="unY-hc-Hy7" id="NrS-Ww-yHL"/>
+                        <outlet property="userInstrument" destination="aIy-ia-N5f" id="6Dl-i0-d8S"/>
+                        <outlet property="userLocation" destination="SSN-CD-4o4" id="8jo-zN-MO6"/>
+                        <outlet property="userName" destination="UY4-e4-Osc" id="5Id-Ul-MBC"/>
+                        <outlet property="userSkill" destination="gT5-Xs-b6p" id="GuA-G2-5lO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
