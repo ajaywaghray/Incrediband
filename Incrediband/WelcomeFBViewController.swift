@@ -11,7 +11,6 @@ import UIKit
 class WelcomeFBViewController: UIViewController, FBLoginViewDelegate {
     
     @IBOutlet var fbLoginView : FBLoginView!
-    let userOnboard = IncredibandOnboard(instrument: "?", location: 0, skillLevel: "?")
     
     override func viewDidLoad() {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Incrediband_splash2home_071514 2.png"))

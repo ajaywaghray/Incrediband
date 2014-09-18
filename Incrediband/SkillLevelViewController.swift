@@ -22,11 +22,14 @@ class SkillLevelViewController: UIViewController {
     
     // This uploads all the data in the model to Parse
     @IBAction func UploadModel(sender: AnyObject){
-        userOnboard.skillLevel = "Beginner"
+        
+        //Hard-coding skill level here until controller is made. -AW
+        userInfo.skillLevel = "Beginner"
+        
         var userUpload = PFObject(className: "User")
-        userUpload.setObject(userOnboard.instrument, forKey: "Instrument")
-        userUpload.setObject(userOnboard.location, forKey: "Location")
-        userUpload.setObject(userOnboard.skillLevel, forKey: "Skill Level")
+        userUpload.setObject(userInfo.instrument, forKey: "Instrument")
+        userUpload.setObject(userInfo.location, forKey: "Location")
+        userUpload.setObject(userInfo.skillLevel, forKey: "Skill Level")
         
         // Can't get uploading to work! Commented out until I can sort this out. -AW
         

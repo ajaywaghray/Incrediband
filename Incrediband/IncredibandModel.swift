@@ -23,4 +23,4 @@ class IncredibandOnboard {
     }
 }
 
-let userOnboard = IncredibandOnboard(instrument: "?", location: 0, skillLevel: "?")
+let userInfo = IncredibandOnboard(instrument: "?", location: 0, skillLevel: "?")
