@@ -14,11 +14,11 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQr-d4-Ar2">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items/>
                             </toolbar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vea-Bz-kXH">
@@ -623,11 +623,11 @@
             </objects>
             <point key="canvasLocation" x="757.5" y="-836.25"/>
         </scene>
-        <!--Matches-->
+        <!--Results-->
         <scene sceneID="v43-kc-PTD">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FdW-7I-MZJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Matches" image="first" id="aSm-jl-HPZ"/>
+                    <tabBarItem key="tabBarItem" title="Results" image="first" id="aSm-jl-HPZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aGV-k5-rgw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -642,11 +642,11 @@
             </objects>
             <point key="canvasLocation" x="757.5" y="-154.5"/>
         </scene>
-        <!--Messages-->
+        <!--Inbox-->
         <scene sceneID="meg-Mz-j8q">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WjY-2k-NIN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Messages" image="first" id="qkL-nB-kog"/>
+                    <tabBarItem key="tabBarItem" title="Inbox" image="first" id="qkL-nB-kog"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="a9S-Vm-ja0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

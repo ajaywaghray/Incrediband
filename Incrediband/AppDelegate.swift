@@ -18,6 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     FBLoginView.self
     FBProfilePictureView.self
+        
+    Parse.setApplicationId("oIb9FeVPJatHVobtNop1ro3bO7RLL2ofdcXlOQyY",  clientKey:"yBvFHS14Wkh3DnmadOmLf5PvlB2dDIf6CEO5EvdS")
+        
+    PFUser.enableAutomaticUser()
+        
+    var defaultACL = PFACL.ACL()
+        
+    // If you would like all objects to be private by default, remove this line.
+    defaultACL.setPublicReadAccess(true)
+    PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser: true)
     
     return true
     }
