@@ -10,7 +10,7 @@ import UIKit
 import CoreLocation
 //import foundation
 
-class WherePlayViewController: UIViewController {
+class WherePlayViewController: UIViewController,UITextFieldDelegate {
     
     @IBOutlet var zipCode : UITextField!
     
@@ -18,6 +18,7 @@ class WherePlayViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //locationManager = CLLocationManager()
+        zipCode.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,9 +27,11 @@ class WherePlayViewController: UIViewController {
     }
     
     //Checks for completed input, changes input to a number, then adds number to the user's location in the model
-    @IBAction func UITextFieldTextDidChangeNotification(sender: AnyObject){
+    func textFieldShouldReturn(sender: AnyObject) -> Bool {
+        zipCode.resignFirstResponder()
         let a:Int? = zipCode.text.toInt()
         userInfo.location = a!
+        return true
     }
     
 }
