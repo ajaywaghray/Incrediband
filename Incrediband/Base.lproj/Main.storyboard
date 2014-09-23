@@ -146,9 +146,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="50" rowHeight="101" id="esM-L5-Bf0">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="50" reuseIdentifier="usersCell" rowHeight="101" id="esM-L5-Bf0" customClass="ResultsTableViewCell" customModule="Incrediband" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="esM-L5-Bf0" id="Qtt-xe-hdn">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="esM-L5-Bf0" id="Qtt-xe-hdn">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o26-s9-JyA">
@@ -207,10 +207,13 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="4wV-Gg-eAD"/>
+                    <connections>
+                        <outlet property="usersTable" destination="n9y-7V-8iF" id="mVK-gU-gSo"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVi-gl-FUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1675.5" y="-141"/>
+            <point key="canvasLocation" x="2866.5" y="-1089.75"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="bYH-Yj-l4b">

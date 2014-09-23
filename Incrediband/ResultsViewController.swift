@@ -9,36 +9,37 @@
 import Foundation
 import UIKit
 
-class ResultsViewController: UIKit.UIViewController, UITableViewDataSource{
+class ResultsViewController: UIKit.UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet var userResultName : UILabel!
     @IBOutlet var userResultSkillLevel : UILabel!
     @IBOutlet var userResultProfilePicture: UIImageView!
     @IBOutlet var userResultInstument: UIImageView!
+    @IBOutlet var usersTable: UITableView!
 
     var possibleTips = Dictionary<Int, (tipAmt:Double, total:Double)>()
     var sortedKeys:[Int] = []
     
     func refreshUI() {
-        userResultName.text = String(userInfo.userName)
-        userResultSkillLevel.text = String(userInfo.skillLevel)
+        userResultName.text = "Ajay"
+        userResultSkillLevel.text = "Beginner"
         //userResultProfilePicture. = 0
         if(userInfo.instrument == "Guitar"){
-            //userResultInstument.image = 0
+            //userResultInstument.image
         }
         if(userInfo.instrument == "Bass"){
             //userResultInstument.data = 0
         }
-        if(userInfo.instrument == "Bass"){
+        if(userInfo.instrument == "Vocals"){
             //userResultInstument.data = 0
         }
-        if(userInfo.instrument == "Bass"){
+        if(userInfo.instrument == "Drums"){
             //userResultInstument.data = 0
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        refreshUI()
+       // refreshUI()
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,20 +51,35 @@ class ResultsViewController: UIKit.UIViewController, UITableViewDataSource{
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return sortedKeys.count
+        return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.Value2, reuseIdentifier: nil)
+    
         
-        let tipPct = sortedKeys[indexPath.row]
-        let tipAmt = possibleTips[tipPct]!.tipAmt
-        let total = possibleTips[tipPct]!.total
+        var cell : UITableViewCell! = tableView .dequeueReusableCellWithIdentifier("usersCell", forIndexPath: indexPath) as UITableViewCell
         
-        cell.textLabel?.text = String(userInfo.userName)
-        cell.detailTextLabel?.text = String(format:"Tip: $%0.2f, Total: $%0.2f", tipAmt, total)
+        
+        
+        if let usersCell = cell as? ResultsTableViewCell {
+            if let label = usersCell.userResultName {
+                label.text = "Ajay"
+            }
+            if let label = usersCell.userResultSkillLevel {
+                label.text = "Fucking noob"
+            }
+            return usersCell
+        }
+        
         return cell
     }
     
+}
+
+class ResultsTableViewCell: UIKit.UITableViewCell {
+    @IBOutlet var userResultName : UILabel!
+    @IBOutlet var userResultSkillLevel : UILabel!
+    @IBOutlet var userResultProfilePicture: UIImageView!
+    @IBOutlet var userResultInstument: UIImageView!
 }
 
