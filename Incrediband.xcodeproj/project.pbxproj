@@ -11,6 +11,7 @@
 		626FBC8B19BD13D900662179 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626FBC8819BD13D900662179 /* Parse.framework */; };
 		626FBC8C19BD13D900662179 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626FBC8919BD13D900662179 /* ParseFacebookUtils.framework */; };
 		626FBC8E19BD146C00662179 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626FBC8D19BD146C00662179 /* FacebookSDK.framework */; };
+		8403161519CBE50500FB3D2C /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8403161419CBE50500FB3D2C /* ResultsViewController.swift */; };
 		84032C0819CA714000645AEB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84032C0719CA714000645AEB /* ProfileViewController.swift */; };
 		841B914419BBA90900A9BA6C /* SkillLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B914319BBA90900A9BA6C /* SkillLevelViewController.swift */; };
 		842D6C8B19B18478008CFCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D6C8A19B18478008CFCFD /* AppDelegate.swift */; };
@@ -50,6 +51,7 @@
 		626FBC8819BD13D900662179 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		626FBC8919BD13D900662179 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		626FBC8D19BD146C00662179 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		8403161419CBE50500FB3D2C /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		84032C0719CA714000645AEB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		841B914319BBA90900A9BA6C /* SkillLevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillLevelViewController.swift; sourceTree = "<group>"; };
 		842D6C8519B18478008CFCFD /* Incrediband.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Incrediband.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +170,7 @@
 				8460516019B18E550040F518 /* ThirdViewController.swift */,
 				842D6C9019B18478008CFCFD /* Main.storyboard */,
 				84032C0719CA714000645AEB /* ProfileViewController.swift */,
+				8403161419CBE50500FB3D2C /* ResultsViewController.swift */,
 				841B914319BBA90900A9BA6C /* SkillLevelViewController.swift */,
 				84B9D4CE19B96C34001610E1 /* WherePlayViewController.swift */,
 				84CA2DB219B6A6E000777BEA /* WhatInstrumentViewController.swift */,
@@ -307,6 +310,7 @@
 				841B914419BBA90900A9BA6C /* SkillLevelViewController.swift in Sources */,
 				84B9D4CF19B96C34001610E1 /* WherePlayViewController.swift in Sources */,
 				84032C0819CA714000645AEB /* ProfileViewController.swift in Sources */,
+				8403161519CBE50500FB3D2C /* ResultsViewController.swift in Sources */,
 				842D6C8F19B18478008CFCFD /* SecondViewController.swift in Sources */,
 				842D6C8B19B18478008CFCFD /* AppDelegate.swift in Sources */,
 				8460518219B4BFDF0040F518 /* IncredibandModel.swift in Sources */,

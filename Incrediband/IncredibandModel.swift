@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 // Here is the class used to hold info when the user is onboarding into Incrediband
 class IncredibandOnboard {
@@ -26,3 +27,19 @@ class IncredibandOnboard {
 }
 
 let userInfo = IncredibandOnboard(instrument: "?", location: 0, skillLevel: "?", userName: "?")
+
+class TestDataSource : NSObject {
+    
+    // 3
+    //let tipCalc = IncredibandOnboard(total: 33.25, taxPct: 0.06)
+    var possibleTips = Dictionary<Int, (tipAmt:Double, total:Double)>()
+    var sortedKeys:[Int] = []
+    
+    // 4
+    override init() {
+        //possibleTips = tipCalc.returnPossibleTips()
+        sortedKeys = sorted(Array(possibleTips.keys))
+        super.init()
+    }
+    
+}
