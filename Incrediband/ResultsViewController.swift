@@ -51,7 +51,7 @@ class ResultsViewController: UIKit.UIViewController, UITableViewDataSource, UITa
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 5
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -66,7 +66,7 @@ class ResultsViewController: UIKit.UIViewController, UITableViewDataSource, UITa
                 label.text = "Ajay"
             }
             if let label = usersCell.userResultSkillLevel {
-                label.text = "Fucking noob"
+                label.text = "Beginner"
             }
             return usersCell
         }

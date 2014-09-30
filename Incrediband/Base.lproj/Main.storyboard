@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361p" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2vg-9W-2ec">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -178,7 +177,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="101" y="57" width="42" height="21"/>
+                                                <rect key="frame" x="101" y="57" width="176" height="21"/>
                                             </variation>
                                         </label>
                                     </subviews>
@@ -199,6 +198,10 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="userResultName" destination="o26-s9-JyA" id="8qp-TR-XbF"/>
+                                    <outlet property="userResultSkillLevel" destination="Fkr-97-GkO" id="J6N-Xh-j73"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
