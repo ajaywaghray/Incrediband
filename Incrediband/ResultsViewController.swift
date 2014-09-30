@@ -15,31 +15,14 @@ class ResultsViewController: UIKit.UIViewController, UITableViewDataSource, UITa
     @IBOutlet var userResultProfilePicture: UIImageView!
     @IBOutlet var userResultInstument: UIImageView!
     @IBOutlet var usersTable: UITableView!
-
-    var possibleTips = Dictionary<Int, (tipAmt:Double, total:Double)>()
-    var sortedKeys:[Int] = []
     
     func refreshUI() {
-        userResultName.text = "Ajay"
-        userResultSkillLevel.text = "Beginner"
-        //userResultProfilePicture. = 0
-        if(userInfo.instrument == "Guitar"){
-            //userResultInstument.image
-        }
-        if(userInfo.instrument == "Bass"){
-            //userResultInstument.data = 0
-        }
-        if(userInfo.instrument == "Vocals"){
-            //userResultInstument.data = 0
-        }
-        if(userInfo.instrument == "Drums"){
-            //userResultInstument.data = 0
-        }
+    
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // refreshUI()
+        refreshUI()
     }
     
     override func didReceiveMemoryWarning() {
