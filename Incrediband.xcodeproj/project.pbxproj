@@ -33,6 +33,7 @@
 		8460518219B4BFDF0040F518 /* IncredibandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460518119B4BFDF0040F518 /* IncredibandModel.swift */; };
 		8460518419B4C7F20040F518 /* WelcomeFBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460518319B4C7F20040F518 /* WelcomeFBViewController.swift */; };
 		84B9D4CF19B96C34001610E1 /* WherePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9D4CE19B96C34001610E1 /* WherePlayViewController.swift */; };
+		84C78A2819DA5D500085622C /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C78A2719DA5D500085622C /* InboxViewController.swift */; };
 		84CA2DB319B6A6E000777BEA /* WhatInstrumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA2DB219B6A6E000777BEA /* WhatInstrumentViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		8460518119B4BFDF0040F518 /* IncredibandModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncredibandModel.swift; sourceTree = "<group>"; };
 		8460518319B4C7F20040F518 /* WelcomeFBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeFBViewController.swift; sourceTree = "<group>"; };
 		84B9D4CE19B96C34001610E1 /* WherePlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WherePlayViewController.swift; sourceTree = "<group>"; };
+		84C78A2719DA5D500085622C /* InboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
 		84CA2DB219B6A6E000777BEA /* WhatInstrumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatInstrumentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +173,7 @@
 				842D6C9019B18478008CFCFD /* Main.storyboard */,
 				84032C0719CA714000645AEB /* ProfileViewController.swift */,
 				8403161419CBE50500FB3D2C /* ResultsViewController.swift */,
+				84C78A2719DA5D500085622C /* InboxViewController.swift */,
 				841B914319BBA90900A9BA6C /* SkillLevelViewController.swift */,
 				84B9D4CE19B96C34001610E1 /* WherePlayViewController.swift */,
 				84CA2DB219B6A6E000777BEA /* WhatInstrumentViewController.swift */,
@@ -308,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				841B914419BBA90900A9BA6C /* SkillLevelViewController.swift in Sources */,
+				84C78A2819DA5D500085622C /* InboxViewController.swift in Sources */,
 				84B9D4CF19B96C34001610E1 /* WherePlayViewController.swift in Sources */,
 				84032C0819CA714000645AEB /* ProfileViewController.swift in Sources */,
 				8403161519CBE50500FB3D2C /* ResultsViewController.swift in Sources */,
