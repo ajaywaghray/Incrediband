@@ -24,13 +24,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vea-Bz-kXH">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="64" width="400" height="687"/>
+                                    <rect key="frame" x="0.0" y="64" width="320" height="505"/>
                                 </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="unY-hc-Hy7">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="154" y="299" width="104" height="96"/>
+                                    <rect key="frame" x="108" y="103" width="104" height="96"/>
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emery" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UY4-e4-Osc">
@@ -39,7 +39,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="154" y="400" width="104" height="36"/>
+                                    <rect key="frame" x="108" y="212" width="104" height="36"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gT5-Xs-b6p">
@@ -51,7 +51,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="98" y="432" width="100" height="20"/>
+                                    <rect key="frame" x="50" y="256" width="100" height="20"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aIy-ia-N5f">
@@ -63,7 +63,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="210" y="432" width="92" height="20"/>
+                                    <rect key="frame" x="169" y="256" width="92" height="20"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Austin, TX" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSN-CD-4o4">
@@ -72,7 +72,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="166" y="456" width="80" height="20"/>
+                                    <rect key="frame" x="120" y="284" width="80" height="20"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dV-2d-rBc">
@@ -81,7 +81,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="174" y="484" width="65" height="32"/>
+                                    <rect key="frame" x="128" y="312" width="65" height="32"/>
                                 </variation>
                                 <connections>
                                     <segue destination="tdW-jq-I0x" kind="show" id="eHW-gs-TSc"/>
@@ -118,6 +118,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Profile" id="g9Y-PC-cvF"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="instrumentBackground" destination="Vea-Bz-kXH" id="vvz-Hz-ZGT"/>
                         <outlet property="profilePhoto" destination="unY-hc-Hy7" id="NrS-Ww-yHL"/>
@@ -149,7 +150,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="168" y="390" width="64" height="20"/>
+                                    <rect key="frame" x="128" y="274" width="64" height="20"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -165,6 +166,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1zX-XB-L53" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -211,7 +213,7 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dHU-vZ-lSQ">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                             <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="285" y="8" width="107" height="84"/>
+                                                <rect key="frame" x="205" y="8" width="107" height="84"/>
                                             </variation>
                                         </imageView>
                                     </subviews>
@@ -245,6 +247,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Inbox" id="ZDk-1m-hv9"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="usersTable" destination="ai9-xE-jsC" id="nkO-4H-Sly"/>
                     </connections>
@@ -314,7 +317,7 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jm6-OE-7KG">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                             <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="299" y="8" width="89" height="91"/>
+                                                <rect key="frame" x="223" y="8" width="89" height="91"/>
                                             </variation>
                                         </imageView>
                                     </subviews>
@@ -379,6 +382,7 @@
                             <outlet property="delegate" destination="WdU-Vo-337" id="CEm-r1-nEh"/>
                         </connections>
                     </tableView>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="conversationTable" destination="KQt-0R-cZE" id="Fn0-2L-x9A"/>
                     </connections>
@@ -410,12 +414,6 @@
                                                 <rect key="frame" x="101" y="11" width="89" height="38"/>
                                             </variation>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RNJ-da-MG3">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="295" y="1" width="97" height="93"/>
-                                            </variation>
-                                        </imageView>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fMy-CM-Iot">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                             <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -431,21 +429,27 @@
                                                 <rect key="frame" x="101" y="57" width="176" height="21"/>
                                             </variation>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RNJ-da-MG3">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="215" y="1" width="97" height="93"/>
+                                            </variation>
+                                        </imageView>
                                     </subviews>
                                     <variation key="default">
                                         <mask key="subviews">
                                             <exclude reference="o26-s9-JyA"/>
-                                            <exclude reference="RNJ-da-MG3"/>
                                             <exclude reference="fMy-CM-Iot"/>
                                             <exclude reference="Fkr-97-GkO"/>
+                                            <exclude reference="RNJ-da-MG3"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
                                         <mask key="subviews">
                                             <include reference="o26-s9-JyA"/>
-                                            <include reference="RNJ-da-MG3"/>
                                             <include reference="fMy-CM-Iot"/>
                                             <include reference="Fkr-97-GkO"/>
+                                            <include reference="RNJ-da-MG3"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
@@ -462,6 +466,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Results" id="4wV-Gg-eAD"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="usersTable" destination="n9y-7V-8iF" id="mVK-gU-gSo"/>
                     </connections>
@@ -567,6 +572,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="instrumentBackground" destination="o2G-H2-kRK" id="bUk-gK-e05"/>
                         <outlet property="profilePhoto" destination="KLV-c4-IWR" id="dxa-C4-jbf"/>
@@ -623,6 +629,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLr-tJ-fGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -932,6 +939,7 @@
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -953,6 +961,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tBT-r1-eIK" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="first" id="acW-dT-cKf"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="N2m-Qz-lgT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -972,6 +981,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FdW-7I-MZJ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Results" image="first" id="aSm-jl-HPZ"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="aGV-k5-rgw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -991,6 +1001,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WjY-2k-NIN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Inbox" image="first" id="qkL-nB-kog"/>
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="a9S-Vm-ja0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1002,7 +1013,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U9X-xZ-JQ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="757.5" y="519.75"/>
+            <point key="canvasLocation" x="757.5" y="666.75"/>
         </scene>
     </scenes>
     <resources>
