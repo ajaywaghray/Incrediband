@@ -10,11 +10,11 @@ import Foundation
 import UIKit
 
 class ConversationViewController: UIKit.UIViewController, UITableViewDataSource, UITableViewDelegate {
-    @IBOutlet var userResultName : UILabel!
-    @IBOutlet var userResultSkillLevel : UILabel!
-    @IBOutlet var userResultProfilePicture: UIImageView!
-    @IBOutlet var userResultInstument: UIImageView!
-    @IBOutlet var usersTable: UITableView!
+    @IBOutlet var userConversation : UILabel!
+    @IBOutlet var matchConversation : UILabel!
+    @IBOutlet var matchProfilePicture: UIImageView!
+    @IBOutlet var userProfilePicture: UIImageView!
+    @IBOutlet var conversationTable: UITableView!
     
     func refreshUI() {
         
@@ -30,28 +30,28 @@ class ConversationViewController: UIKit.UIViewController, UITableViewDataSource,
     }
     
     @IBAction func viewTapped(sender : AnyObject) {
-        userResultName.resignFirstResponder()
+        userConversation.resignFirstResponder()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         
-        var cell : UITableViewCell! = tableView .dequeueReusableCellWithIdentifier("usersCell", forIndexPath: indexPath) as UITableViewCell
+        var cell : UITableViewCell! = tableView .dequeueReusableCellWithIdentifier("conversationCell", forIndexPath: indexPath) as UITableViewCell
         
         
         
-        if let usersCell = cell as? ResultsTableViewCell {
-            if let label = usersCell.userResultName {
+        if let conversationCell = cell as? ConversationTableViewCell {
+            if let label = conversationCell.userConversation {
                 label.text = "Ajay"
             }
-            if let label = usersCell.userResultSkillLevel {
+            if let label = conversationCell.matchConversation {
                 label.text = "Beginner"
             }
-            return usersCell
+            return conversationCell
         }
         
         return cell
@@ -60,8 +60,8 @@ class ConversationViewController: UIKit.UIViewController, UITableViewDataSource,
 }
 
 class ConversationTableViewCell: UIKit.UITableViewCell {
-    @IBOutlet var userResultName : UILabel!
-    @IBOutlet var userResultSkillLevel : UILabel!
-    @IBOutlet var userResultProfilePicture: UIImageView!
-    @IBOutlet var userResultInstument: UIImageView!
+    @IBOutlet var userConversation : UILabel!
+    @IBOutlet var matchConversation : UILabel!
+    @IBOutlet var matchProfilePicture: UIImageView!
+    @IBOutlet var userProfilePicture: UIImageView!
 }
