@@ -19,6 +19,7 @@
 		842D6C9219B18478008CFCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842D6C9019B18478008CFCFD /* Main.storyboard */; };
 		842D6C9419B18478008CFCFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842D6C9319B18478008CFCFD /* Images.xcassets */; };
 		842D6CA019B18479008CFCFD /* IncredibandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D6C9F19B18479008CFCFD /* IncredibandTests.swift */; };
+		843F227819E99DD100F51DAE /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F227719E99DD100F51DAE /* ConversationViewController.swift */; };
 		8460516119B18E550040F518 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460516019B18E550040F518 /* ThirdViewController.swift */; };
 		8460516C19B4B2500040F518 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8460516219B4B2500040F518 /* AudioToolbox.framework */; };
 		8460516D19B4B2500040F518 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8460516319B4B2500040F518 /* CFNetwork.framework */; };
@@ -65,6 +66,7 @@
 		842D6C9919B18478008CFCFD /* IncredibandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IncredibandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		842D6C9E19B18478008CFCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842D6C9F19B18479008CFCFD /* IncredibandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncredibandTests.swift; sourceTree = "<group>"; };
+		843F227719E99DD100F51DAE /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		8460516019B18E550040F518 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		8460516219B4B2500040F518 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8460516319B4B2500040F518 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -174,6 +176,7 @@
 				8460516019B18E550040F518 /* ThirdViewController.swift */,
 				842D6C9019B18478008CFCFD /* Main.storyboard */,
 				8476537319DCF83100CCB338 /* ResultProfileViewController.swift */,
+				843F227719E99DD100F51DAE /* ConversationViewController.swift */,
 				84032C0719CA714000645AEB /* ProfileViewController.swift */,
 				8403161419CBE50500FB3D2C /* ResultsViewController.swift */,
 				84C78A2719DA5D500085622C /* InboxViewController.swift */,
@@ -316,6 +319,7 @@
 				841B914419BBA90900A9BA6C /* SkillLevelViewController.swift in Sources */,
 				8476537419DCF83100CCB338 /* ResultProfileViewController.swift in Sources */,
 				84C78A2819DA5D500085622C /* InboxViewController.swift in Sources */,
+				843F227819E99DD100F51DAE /* ConversationViewController.swift in Sources */,
 				84B9D4CF19B96C34001610E1 /* WherePlayViewController.swift in Sources */,
 				84032C0819CA714000645AEB /* ProfileViewController.swift in Sources */,
 				8403161519CBE50500FB3D2C /* ResultsViewController.swift in Sources */,

@@ -235,7 +235,7 @@
                                 <connections>
                                     <outlet property="userResultName" destination="PeP-36-yaP" id="sI6-r7-XHM"/>
                                     <outlet property="userResultSkillLevel" destination="nED-fz-5Jz" id="SCy-FB-Ila"/>
-                                    <segue destination="L1n-yM-xSU" kind="show" id="jww-RD-RiH"/>
+                                    <segue destination="WdU-Vo-337" kind="show" id="WIN-Kf-cNa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -253,44 +253,58 @@
             </objects>
             <point key="canvasLocation" x="2046" y="1837.5"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="TWf-8h-WhO">
+        <!--Conversation View Controller-->
+        <scene sceneID="2sM-Nl-bUg">
             <objects>
-                <viewController id="L1n-yM-xSU" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qip-xn-peJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="A6j-O3-3ez"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HDz-s9-Qgy">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <tableViewController id="WdU-Vo-337" customClass="ConversationViewController" customModule="Incrediband" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="22" sectionFooterHeight="22" id="KQt-0R-cZE">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conversation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XI-bi-nBI">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="149" y="389" width="102" height="21"/>
-                                </variation>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="8XI-bi-nBI"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="8XI-bi-nBI"/>
-                            </mask>
-                        </variation>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AaH-hh-PTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="Igp-nw-Hoe">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Igp-nw-Hoe" id="896-3K-oG8">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rbg-Qk-PHD">
+                                            <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="8" y="8" width="285" height="30"/>
+                                            </variation>
+                                        </textField>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jm6-OE-7KG">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="303" y="45" width="89" height="76"/>
+                                            </variation>
+                                        </imageView>
+                                    </subviews>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="rbg-Qk-PHD"/>
+                                            <exclude reference="Jm6-OE-7KG"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="heightClass=regular-widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="rbg-Qk-PHD"/>
+                                            <include reference="Jm6-OE-7KG"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="WdU-Vo-337" id="2LA-c0-79Q"/>
+                            <outlet property="delegate" destination="WdU-Vo-337" id="CEm-r1-nEh"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jVF-YD-EE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2760" y="1833.75"/>
+            <point key="canvasLocation" x="2925" y="1837.5"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="HDc-x1-gvU">
