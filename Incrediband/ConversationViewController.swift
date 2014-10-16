@@ -35,22 +35,50 @@ class ConversationViewController: UIKit.UIViewController, UITableViewDataSource,
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var identifier: NSString = "Cell1"
+        let index = indexPath.indexAtPosition(1)
+        if index % 2 == 1 {
+            var cell = tableView.dequeueReusableCellWithIdentifier("Cell2") as MatchConversationTableViewCell
+            //cell.label.text = "Label \(indexPath.indexAtPosition(1))"
+            if let label = cell.matchConversation {
+                label.text = "Hey! Can't make it Tuesday, but how about Sunday?"
+            }
+            if let image = cell.matchProfilePicture{
+                image.image = UIImage(named: "drumsBackground")
+            }
+            return cell
+        } else{
+            var cell = tableView.dequeueReusableCellWithIdentifier("Cell1") as UserConversationTableViewCell
+            if let label = cell.userConversation {
+                label.text = "What's up man? Wanna make some music on Tuesday?"
+            }
+            
+            if let image = cell.userProfilePicture{
+                image.image = UIImage(named: "guitarBackground")
+            }
+            return cell
+        }
+        
+        //var identifier: NSString = "Cell1"
         //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
         
-        var cell : UITableViewCell! = tableView .dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath) as UITableViewCell
+        //var cell : UITableViewCell! = tableView .dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath) as UITableViewCell
         
         
         
-        if let Cell1 = cell as? UserConversationTableViewCell {
+        /*if let Cell1 = cell as? UserConversationTableViewCell {
             if let label = Cell1.userConversation {
                 label.text = "What's up man? Wanna make some music on Tuesday?"
             }
+            
+            if let image = Cell1.userProfilePicture{
+                image.image = UIImage(named: "guitarBackground")
+            }
+            
             return Cell1
         }
         
@@ -58,12 +86,15 @@ class ConversationViewController: UIKit.UIViewController, UITableViewDataSource,
             if let label = Cell2.matchConversation {
                 label.text = "Hey! Can't make it Tuesday, but how about Sunday?"
             }
+            if let image = Cell2.matchProfilePicture{
+                image.image = UIImage(named: "drumsBackground")
+            }
+            
             return Cell2
-        }
+        }*/
         
-        return cell
+        //return cell
     }
-    
 }
 
 class UserConversationTableViewCell: UIKit.UITableViewCell {
