@@ -20,6 +20,7 @@
 		842D6C9419B18478008CFCFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842D6C9319B18478008CFCFD /* Images.xcassets */; };
 		842D6CA019B18479008CFCFD /* IncredibandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D6C9F19B18479008CFCFD /* IncredibandTests.swift */; };
 		843F227819E99DD100F51DAE /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F227719E99DD100F51DAE /* ConversationViewController.swift */; };
+		844EF72D19EF63F7002B8245 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EF72C19EF63F7002B8245 /* NewMessageViewController.swift */; };
 		8460516119B18E550040F518 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460516019B18E550040F518 /* ThirdViewController.swift */; };
 		8460516C19B4B2500040F518 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8460516219B4B2500040F518 /* AudioToolbox.framework */; };
 		8460516D19B4B2500040F518 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8460516319B4B2500040F518 /* CFNetwork.framework */; };
@@ -67,6 +68,7 @@
 		842D6C9E19B18478008CFCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842D6C9F19B18479008CFCFD /* IncredibandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncredibandTests.swift; sourceTree = "<group>"; };
 		843F227719E99DD100F51DAE /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		844EF72C19EF63F7002B8245 /* NewMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
 		8460516019B18E550040F518 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		8460516219B4B2500040F518 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8460516319B4B2500040F518 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
@@ -175,6 +177,7 @@
 				842D6C8E19B18478008CFCFD /* SecondViewController.swift */,
 				8460516019B18E550040F518 /* ThirdViewController.swift */,
 				842D6C9019B18478008CFCFD /* Main.storyboard */,
+				844EF72C19EF63F7002B8245 /* NewMessageViewController.swift */,
 				8476537319DCF83100CCB338 /* ResultProfileViewController.swift */,
 				843F227719E99DD100F51DAE /* ConversationViewController.swift */,
 				8403161419CBE50500FB3D2C /* ResultsViewController.swift */,
@@ -329,6 +332,7 @@
 				84CA2DB319B6A6E000777BEA /* WhatInstrumentViewController.swift in Sources */,
 				8460518419B4C7F20040F518 /* WelcomeFBViewController.swift in Sources */,
 				8460516119B18E550040F518 /* ThirdViewController.swift in Sources */,
+				844EF72D19EF63F7002B8245 /* NewMessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

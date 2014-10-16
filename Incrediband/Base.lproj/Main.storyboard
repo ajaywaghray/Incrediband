@@ -592,10 +592,10 @@
             </objects>
             <point key="canvasLocation" x="3699" y="-154.5"/>
         </scene>
-        <!--View Controller-->
+        <!--New Message View Controller-->
         <scene sceneID="9hG-KB-JPe">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="BQ2-Qu-JLJ" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="BQ2-Qu-JLJ" customClass="NewMessageViewController" customModule="Incrediband" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rxL-Qv-nFd"/>
                         <viewControllerLayoutGuide type="bottom" id="YOC-gD-Yv1"/>
@@ -625,47 +625,48 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="TpR-zT-q3Z">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewMessageCell" rowHeight="100" id="TpR-zT-q3Z" customClass="NewMessageTableViewCell" customModule="Incrediband" customModuleProvider="target">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TpR-zT-q3Z" id="ahK-cE-jwr">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Ko-X1-pMG">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AJ4-SM-HNg">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                                     <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="8" y="4" width="95" height="91"/>
+                                                        <rect key="frame" x="216" y="4" width="96" height="92"/>
                                                     </variation>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sc-7v-1Go">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK9-lP-dvA">
                                                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                                    <accessibility key="accessibilityConfiguration">
-                                                        <accessibilityTraits key="traits" none="YES"/>
-                                                    </accessibility>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                        <rect key="frame" x="111" y="4" width="201" height="91"/>
+                                                        <rect key="frame" x="8" y="8" width="200" height="84"/>
                                                     </variation>
                                                 </label>
                                             </subviews>
                                             <variation key="default">
                                                 <mask key="subviews">
-                                                    <exclude reference="1Ko-X1-pMG"/>
-                                                    <exclude reference="7sc-7v-1Go"/>
+                                                    <exclude reference="AJ4-SM-HNg"/>
+                                                    <exclude reference="fK9-lP-dvA"/>
                                                 </mask>
                                             </variation>
                                             <variation key="heightClass=regular-widthClass=compact">
                                                 <mask key="subviews">
-                                                    <include reference="1Ko-X1-pMG"/>
-                                                    <include reference="7sc-7v-1Go"/>
+                                                    <include reference="AJ4-SM-HNg"/>
+                                                    <include reference="fK9-lP-dvA"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="userNewMessage" destination="fK9-lP-dvA" id="YbE-g1-5ke"/>
+                                            <outlet property="userProfilePicture" destination="AJ4-SM-HNg" id="f56-CX-m2m"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="64" width="320" height="179"/>
+                                    <rect key="frame" x="0.0" y="64" width="320" height="148"/>
                                 </variation>
                             </tableView>
                         </subviews>
@@ -686,10 +687,13 @@
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="newMessageTable" destination="hxK-2C-P0i" id="faK-wY-y5S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLr-tJ-fGe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4521" y="-154.5"/>
+            <point key="canvasLocation" x="4521" y="-155.25"/>
         </scene>
         <!--WelcomeFB View Controller-->
         <scene sceneID="Sbo-vi-4Yb">
