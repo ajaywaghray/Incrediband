@@ -547,12 +547,39 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="129" y="369" width="62" height="30"/>
+                                    <rect key="frame" x="129" y="471" width="62" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="BQ2-Qu-JLJ" kind="show" id="6UB-Hc-Bs6"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mutual Friends:" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KJJ-7q-4oq">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="373" width="65" height="69"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WDl-PB-Tkf">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="81" y="388" width="41" height="41"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ktT-UF-lv4">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="140" y="388" width="41" height="41"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p4m-3h-Ba8">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="201" y="388" width="41" height="41"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -564,6 +591,10 @@
                                 <exclude reference="ram-BO-exu"/>
                                 <exclude reference="KLV-c4-IWR"/>
                                 <exclude reference="LBu-8r-H1e"/>
+                                <exclude reference="KJJ-7q-4oq"/>
+                                <exclude reference="WDl-PB-Tkf"/>
+                                <exclude reference="ktT-UF-lv4"/>
+                                <exclude reference="p4m-3h-Ba8"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -575,12 +606,19 @@
                                 <include reference="ram-BO-exu"/>
                                 <include reference="KLV-c4-IWR"/>
                                 <include reference="LBu-8r-H1e"/>
+                                <include reference="KJJ-7q-4oq"/>
+                                <include reference="WDl-PB-Tkf"/>
+                                <include reference="ktT-UF-lv4"/>
+                                <include reference="p4m-3h-Ba8"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="instrumentBackground" destination="o2G-H2-kRK" id="bUk-gK-e05"/>
+                        <outlet property="mutualFriend1" destination="WDl-PB-Tkf" id="9PJ-7H-9Xf"/>
+                        <outlet property="mutualFriend2" destination="ktT-UF-lv4" id="EmM-V3-14e"/>
+                        <outlet property="mutualFriend3" destination="p4m-3h-Ba8" id="2Mf-ld-7Od"/>
                         <outlet property="profilePhoto" destination="KLV-c4-IWR" id="dxa-C4-jbf"/>
                         <outlet property="userInstrument" destination="3aJ-h0-R1f" id="si7-fR-Cbc"/>
                         <outlet property="userLocation" destination="ram-BO-exu" id="r3M-oG-Tv6"/>

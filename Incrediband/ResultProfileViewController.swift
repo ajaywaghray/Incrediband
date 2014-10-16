@@ -12,6 +12,9 @@ import UIKit
 class ResultProfileViewController: UIViewController{
     @IBOutlet var profilePhoto : UIImageView!
     @IBOutlet var instrumentBackground : UIImageView!
+    @IBOutlet var mutualFriend1 : UIImageView!
+    @IBOutlet var mutualFriend2 : UIImageView!
+    @IBOutlet var mutualFriend3 : UIImageView!
     @IBOutlet var userName : UILabel!
     @IBOutlet var userSkill : UILabel!
     @IBOutlet var userInstrument : UILabel!
@@ -49,6 +52,10 @@ class ResultProfileViewController: UIViewController{
             instrumentBackground.image = UIImage(named: "drumsBackground")
         }
         
+        //Shows mutual friends eventually
+        mutualFriend1.image = UIImage(named: "guitarBackground")
+        mutualFriend2.image = UIImage(named: "vocalsBackground")
+        mutualFriend3.image = UIImage(named: "drumsBackground")
     }
     
     override func didReceiveMemoryWarning() {
