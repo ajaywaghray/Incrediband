@@ -51,6 +51,12 @@ class ResultsViewController: UIKit.UIViewController, UITableViewDataSource, UITa
             if let label = usersCell.userResultSkillLevel {
                 label.text = "Beginner"
             }
+            if let image = usersCell.userResultInstument {
+                image.image = UIImage(named: "rightsideimage")
+            }
+            if let image = usersCell.userResultProfilePicture {
+                image.image = UIImage(named: "myself")
+            }
             return usersCell
         }
         

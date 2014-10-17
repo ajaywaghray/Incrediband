@@ -51,6 +51,12 @@ class InboxViewController: UIKit.UIViewController, UITableViewDataSource, UITabl
             if let label = inboxCell.userResultSkillLevel {
                 label.text = "Beginner"
             }
+            if let image = inboxCell.userResultInstument {
+                image.image = UIImage(named: "rightsideimage")
+            }
+            if let image = inboxCell.userResultProfilePicture {
+                image.image = UIImage(named: "myself")
+            }
             return inboxCell
         }
         
