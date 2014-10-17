@@ -422,10 +422,10 @@
                                                 <rect key="frame" x="94" y="1" width="89" height="38"/>
                                             </variation>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fMy-CM-Iot">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RNJ-da-MG3">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                             <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="8" y="8" width="73" height="74"/>
+                                                <rect key="frame" x="240" y="10" width="72" height="72"/>
                                             </variation>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkr-97-GkO">
@@ -437,27 +437,27 @@
                                                 <rect key="frame" x="94" y="36" width="89" height="21"/>
                                             </variation>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RNJ-da-MG3">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fMy-CM-Iot">
                                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                             <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                                <rect key="frame" x="240" y="10" width="72" height="72"/>
+                                                <rect key="frame" x="8" y="8" width="73" height="74"/>
                                             </variation>
                                         </imageView>
                                     </subviews>
                                     <variation key="default">
                                         <mask key="subviews">
                                             <exclude reference="o26-s9-JyA"/>
-                                            <exclude reference="fMy-CM-Iot"/>
-                                            <exclude reference="Fkr-97-GkO"/>
                                             <exclude reference="RNJ-da-MG3"/>
+                                            <exclude reference="Fkr-97-GkO"/>
+                                            <exclude reference="fMy-CM-Iot"/>
                                         </mask>
                                     </variation>
                                     <variation key="heightClass=regular-widthClass=compact">
                                         <mask key="subviews">
                                             <include reference="o26-s9-JyA"/>
-                                            <include reference="fMy-CM-Iot"/>
-                                            <include reference="Fkr-97-GkO"/>
                                             <include reference="RNJ-da-MG3"/>
+                                            <include reference="Fkr-97-GkO"/>
+                                            <include reference="fMy-CM-Iot"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
