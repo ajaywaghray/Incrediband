@@ -11,7 +11,7 @@ import UIKit
 class WelcomeFBViewController: UIViewController, FBLoginViewDelegate {
 
     @IBAction func buttonPressed(sender: AnyObject){
-        FBSession.openActiveSessionWithReadPermissions(["public_profile"], allowLoginUI: true, completionHandler: <#FBSessionStateHandler!##(FBSession!, FBSessionState, NSError!) -> Void#>)
+        //FBSession.openActiveSessionWithReadPermissions(["public_profile"], allowLoginUI: true, completionHandler: <#FBSessionStateHandler!##(FBSession!, FBSessionState, NSError!) -> Void#>)
     }
     
     override func viewDidLoad() {
