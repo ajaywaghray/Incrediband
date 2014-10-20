@@ -15,13 +15,11 @@
 		84032C0819CA714000645AEB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84032C0719CA714000645AEB /* ProfileViewController.swift */; };
 		841B914419BBA90900A9BA6C /* SkillLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841B914319BBA90900A9BA6C /* SkillLevelViewController.swift */; };
 		842D6C8B19B18478008CFCFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D6C8A19B18478008CFCFD /* AppDelegate.swift */; };
-		842D6C8F19B18478008CFCFD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D6C8E19B18478008CFCFD /* SecondViewController.swift */; };
 		842D6C9219B18478008CFCFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842D6C9019B18478008CFCFD /* Main.storyboard */; };
 		842D6C9419B18478008CFCFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842D6C9319B18478008CFCFD /* Images.xcassets */; };
 		842D6CA019B18479008CFCFD /* IncredibandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842D6C9F19B18479008CFCFD /* IncredibandTests.swift */; };
 		843F227819E99DD100F51DAE /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F227719E99DD100F51DAE /* ConversationViewController.swift */; };
 		844EF72D19EF63F7002B8245 /* NewMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EF72C19EF63F7002B8245 /* NewMessageViewController.swift */; };
-		8460516119B18E550040F518 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8460516019B18E550040F518 /* ThirdViewController.swift */; };
 		8460516C19B4B2500040F518 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8460516219B4B2500040F518 /* AudioToolbox.framework */; };
 		8460516D19B4B2500040F518 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8460516319B4B2500040F518 /* CFNetwork.framework */; };
 		8460516E19B4B2500040F518 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8460516419B4B2500040F518 /* CoreGraphics.framework */; };
@@ -61,7 +59,6 @@
 		842D6C8519B18478008CFCFD /* Incrediband.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Incrediband.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		842D6C8919B18478008CFCFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842D6C8A19B18478008CFCFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		842D6C8E19B18478008CFCFD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		842D6C9119B18478008CFCFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		842D6C9319B18478008CFCFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		842D6C9919B18478008CFCFD /* IncredibandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IncredibandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,7 +66,6 @@
 		842D6C9F19B18479008CFCFD /* IncredibandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncredibandTests.swift; sourceTree = "<group>"; };
 		843F227719E99DD100F51DAE /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
 		844EF72C19EF63F7002B8245 /* NewMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMessageViewController.swift; sourceTree = "<group>"; };
-		8460516019B18E550040F518 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		8460516219B4B2500040F518 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		8460516319B4B2500040F518 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		8460516419B4B2500040F518 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -174,8 +170,6 @@
 			isa = PBXGroup;
 			children = (
 				842D6C8A19B18478008CFCFD /* AppDelegate.swift */,
-				842D6C8E19B18478008CFCFD /* SecondViewController.swift */,
-				8460516019B18E550040F518 /* ThirdViewController.swift */,
 				842D6C9019B18478008CFCFD /* Main.storyboard */,
 				844EF72C19EF63F7002B8245 /* NewMessageViewController.swift */,
 				8476537319DCF83100CCB338 /* ResultProfileViewController.swift */,
@@ -326,12 +320,10 @@
 				84B9D4CF19B96C34001610E1 /* WherePlayViewController.swift in Sources */,
 				84032C0819CA714000645AEB /* ProfileViewController.swift in Sources */,
 				8403161519CBE50500FB3D2C /* ResultsViewController.swift in Sources */,
-				842D6C8F19B18478008CFCFD /* SecondViewController.swift in Sources */,
 				842D6C8B19B18478008CFCFD /* AppDelegate.swift in Sources */,
 				8460518219B4BFDF0040F518 /* IncredibandModel.swift in Sources */,
 				84CA2DB319B6A6E000777BEA /* WhatInstrumentViewController.swift in Sources */,
 				8460518419B4C7F20040F518 /* WelcomeFBViewController.swift in Sources */,
-				8460516119B18E550040F518 /* ThirdViewController.swift in Sources */,
 				844EF72D19EF63F7002B8245 /* NewMessageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

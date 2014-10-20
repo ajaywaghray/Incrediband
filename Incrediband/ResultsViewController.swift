@@ -43,21 +43,103 @@ class ResultsViewController: UIKit.UIViewController, UITableViewDataSource, UITa
         var cell : UITableViewCell! = tableView .dequeueReusableCellWithIdentifier("usersCell", forIndexPath: indexPath) as UITableViewCell
         
         
-        
-        if let usersCell = cell as? ResultsTableViewCell {
-            if let label = usersCell.userResultName {
-                label.text = "Ajay"
+        let index = indexPath.indexAtPosition(1)
+        if index == 0 {
+            if let usersCell = cell as? ResultsTableViewCell {
+                if let label = usersCell.userResultName {
+                    label.text = "Ajay"
+                }
+                if let label = usersCell.userResultSkillLevel {
+                    label.text = "Beginner"
+                }
+                if let image = usersCell.userResultInstument {
+                    image.image = UIImage(named: "rightsideimage")
+                }
+                if let image = usersCell.userResultProfilePicture {
+                    image.image = UIImage(named: "myself")
+                }
+                return usersCell
             }
-            if let label = usersCell.userResultSkillLevel {
-                label.text = "Beginner"
+        }else if index == 1 {
+            if let usersCell = cell as? ResultsTableViewCell {
+                if let label = usersCell.userResultName {
+                    label.text = "Jason"
+                }
+                if let label = usersCell.userResultSkillLevel {
+                    label.text = "Advanced"
+                }
+                if let image = usersCell.userResultInstument {
+                    image.image = UIImage(named: "rightsideimage")
+                }
+                if let image = usersCell.userResultProfilePicture {
+                    image.image = UIImage(named: "myself")
+                }
+                return usersCell
             }
-            if let image = usersCell.userResultInstument {
-                image.image = UIImage(named: "rightsideimage")
+        }else if index == 2 {
+            if let usersCell = cell as? ResultsTableViewCell {
+                if let label = usersCell.userResultName {
+                    label.text = "Brittany"
+                }
+                if let label = usersCell.userResultSkillLevel {
+                    label.text = "Intermediate"
+                }
+                if let image = usersCell.userResultInstument {
+                    image.image = UIImage(named: "rightsideimage")
+                }
+                if let image = usersCell.userResultProfilePicture {
+                    image.image = UIImage(named: "myself")
+                }
+                return usersCell
             }
-            if let image = usersCell.userResultProfilePicture {
-                image.image = UIImage(named: "myself")
+        }else if index == 3 {
+            if let usersCell = cell as? ResultsTableViewCell {
+                if let label = usersCell.userResultName {
+                    label.text = "William"
+                }
+                if let label = usersCell.userResultSkillLevel {
+                    label.text = "Advanced"
+                }
+                if let image = usersCell.userResultInstument {
+                    image.image = UIImage(named: "rightsideimage")
+                }
+                if let image = usersCell.userResultProfilePicture {
+                    image.image = UIImage(named: "myself")
+                }
+                return usersCell
             }
-            return usersCell
+        }else if index == 4 {
+            if let usersCell = cell as? ResultsTableViewCell {
+                if let label = usersCell.userResultName {
+                    label.text = "Nikul"
+                }
+                if let label = usersCell.userResultSkillLevel {
+                    label.text = "Intermediate"
+                }
+                if let image = usersCell.userResultInstument {
+                    image.image = UIImage(named: "rightsideimage")
+                }
+                if let image = usersCell.userResultProfilePicture {
+                    image.image = UIImage(named: "myself")
+                }
+                return usersCell
+            }
+        }else{
+            if let usersCell = cell as? ResultsTableViewCell {
+                if let label = usersCell.userResultName {
+                    label.text = "Ajay"
+                }
+                if let label = usersCell.userResultSkillLevel {
+                    label.text = "Beginner"
+                }
+                if let image = usersCell.userResultInstument {
+                    image.image = UIImage(named: "rightsideimage")
+                }
+                if let image = usersCell.userResultProfilePicture {
+                    image.image = UIImage(named: "myself")
+                }
+                return usersCell
+            }
         }
         
         return cell

@@ -43,21 +43,103 @@ class InboxViewController: UIKit.UIViewController, UITableViewDataSource, UITabl
         var cell : UITableViewCell! = tableView .dequeueReusableCellWithIdentifier("inboxCell", forIndexPath: indexPath) as UITableViewCell
         
         
-        
-        if let inboxCell = cell as? InboxTableViewCell {
-            if let label = inboxCell.userResultName {
-                label.text = "Ajay"
+        let index = indexPath.indexAtPosition(1)
+        if index == 0 {
+            if let inboxCell = cell as? InboxTableViewCell {
+                if let label = inboxCell.userResultName {
+                    label.text = "Ajay"
+                }
+                if let label = inboxCell.userResultSkillLevel {
+                    label.text = "Beginner"
+                }
+                if let image = inboxCell.userResultInstument {
+                    image.image = UIImage(named: "rightsideimage")
+                }
+                if let image = inboxCell.userResultProfilePicture {
+                    image.image = UIImage(named: "myself")
+                }
+                return inboxCell
             }
-            if let label = inboxCell.userResultSkillLevel {
-                label.text = "Beginner"
+        }else if index == 1{
+            if let inboxCell = cell as? InboxTableViewCell {
+                if let label = inboxCell.userResultName {
+                    label.text = "Casey"
+                }
+                if let label = inboxCell.userResultSkillLevel {
+                    label.text = "Advanced"
+                }
+                if let image = inboxCell.userResultInstument {
+                    image.image = UIImage(named: "rightsideimage")
+                }
+                if let image = inboxCell.userResultProfilePicture {
+                    image.image = UIImage(named: "myself")
+                }
+                return inboxCell
             }
-            if let image = inboxCell.userResultInstument {
-                image.image = UIImage(named: "rightsideimage")
+        }else if index == 2{
+            if let inboxCell = cell as? InboxTableViewCell {
+                if let label = inboxCell.userResultName {
+                    label.text = "Adam"
+                }
+                if let label = inboxCell.userResultSkillLevel {
+                    label.text = "Intermediate"
+                }
+                if let image = inboxCell.userResultInstument {
+                    image.image = UIImage(named: "rightsideimage")
+                }
+                if let image = inboxCell.userResultProfilePicture {
+                    image.image = UIImage(named: "myself")
+                }
+                return inboxCell
             }
-            if let image = inboxCell.userResultProfilePicture {
-                image.image = UIImage(named: "myself")
+        }else if index == 3{
+            if let inboxCell = cell as? InboxTableViewCell {
+                if let label = inboxCell.userResultName {
+                    label.text = "Mukul"
+                }
+                if let label = inboxCell.userResultSkillLevel {
+                    label.text = "Beginner"
+                }
+                if let image = inboxCell.userResultInstument {
+                    image.image = UIImage(named: "rightsideimage")
+                }
+                if let image = inboxCell.userResultProfilePicture {
+                    image.image = UIImage(named: "myself")
+                }
+                return inboxCell
             }
-            return inboxCell
+        }else if index == 4{
+            if let inboxCell = cell as? InboxTableViewCell {
+                if let label = inboxCell.userResultName {
+                    label.text = "Brian"
+                }
+                if let label = inboxCell.userResultSkillLevel {
+                    label.text = "Intermediate"
+                }
+                if let image = inboxCell.userResultInstument {
+                    image.image = UIImage(named: "rightsideimage")
+                }
+                if let image = inboxCell.userResultProfilePicture {
+                    image.image = UIImage(named: "myself")
+                }
+                return inboxCell
+            }
+        }else{
+            if let inboxCell = cell as? InboxTableViewCell {
+                if let label = inboxCell.userResultName {
+                    label.text = "Ajay"
+                }
+                if let label = inboxCell.userResultSkillLevel {
+                    label.text = "Beginner"
+                }
+                if let image = inboxCell.userResultInstument {
+                    image.image = UIImage(named: "rightsideimage")
+                }
+                if let image = inboxCell.userResultProfilePicture {
+                    image.image = UIImage(named: "myself")
+                }
+                return inboxCell
+            }
         }
         
         return cell
