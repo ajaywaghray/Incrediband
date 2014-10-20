@@ -36,6 +36,8 @@
 		84B9D4CF19B96C34001610E1 /* WherePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B9D4CE19B96C34001610E1 /* WherePlayViewController.swift */; };
 		84C78A2819DA5D500085622C /* InboxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C78A2719DA5D500085622C /* InboxViewController.swift */; };
 		84CA2DB319B6A6E000777BEA /* WhatInstrumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CA2DB219B6A6E000777BEA /* WhatInstrumentViewController.swift */; };
+		84D1C96C19F4EA7600B47EBB /* SkillLevelIntViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1C96B19F4EA7600B47EBB /* SkillLevelIntViewController.swift */; };
+		84D1C96E19F4EA8A00B47EBB /* SkillLevelAdvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D1C96D19F4EA8A00B47EBB /* SkillLevelAdvViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		84B9D4CE19B96C34001610E1 /* WherePlayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WherePlayViewController.swift; sourceTree = "<group>"; };
 		84C78A2719DA5D500085622C /* InboxViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InboxViewController.swift; sourceTree = "<group>"; };
 		84CA2DB219B6A6E000777BEA /* WhatInstrumentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatInstrumentViewController.swift; sourceTree = "<group>"; };
+		84D1C96B19F4EA7600B47EBB /* SkillLevelIntViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillLevelIntViewController.swift; sourceTree = "<group>"; };
+		84D1C96D19F4EA8A00B47EBB /* SkillLevelAdvViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillLevelAdvViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +175,8 @@
 			children = (
 				842D6C8A19B18478008CFCFD /* AppDelegate.swift */,
 				842D6C9019B18478008CFCFD /* Main.storyboard */,
+				84D1C96B19F4EA7600B47EBB /* SkillLevelIntViewController.swift */,
+				84D1C96D19F4EA8A00B47EBB /* SkillLevelAdvViewController.swift */,
 				844EF72C19EF63F7002B8245 /* NewMessageViewController.swift */,
 				8476537319DCF83100CCB338 /* ResultProfileViewController.swift */,
 				843F227719E99DD100F51DAE /* ConversationViewController.swift */,
@@ -313,6 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D1C96C19F4EA7600B47EBB /* SkillLevelIntViewController.swift in Sources */,
+				84D1C96E19F4EA8A00B47EBB /* SkillLevelAdvViewController.swift in Sources */,
 				841B914419BBA90900A9BA6C /* SkillLevelViewController.swift in Sources */,
 				8476537419DCF83100CCB338 /* ResultProfileViewController.swift in Sources */,
 				84C78A2819DA5D500085622C /* InboxViewController.swift in Sources */,

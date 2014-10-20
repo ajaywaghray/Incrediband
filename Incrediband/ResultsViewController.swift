@@ -66,7 +66,7 @@ class ResultsViewController: UIKit.UIViewController, UITableViewDataSource, UITa
                     label.text = "Jason"
                 }
                 if let label = usersCell.userResultSkillLevel {
-                    label.text = "Advanced"
+                    label.text = "Expert"
                 }
                 if let image = usersCell.userResultInstument {
                     image.image = UIImage(named: "rightsideimage")
@@ -98,7 +98,7 @@ class ResultsViewController: UIKit.UIViewController, UITableViewDataSource, UITa
                     label.text = "William"
                 }
                 if let label = usersCell.userResultSkillLevel {
-                    label.text = "Advanced"
+                    label.text = "Expert"
                 }
                 if let image = usersCell.userResultInstument {
                     image.image = UIImage(named: "rightsideimage")

@@ -16,30 +16,23 @@ class IncredibandOnboard {
     var location: Int
     var skillLevel: String
     var userName: String
+    var profileID: String
+    
     
     // Initializing variables in the onboarding class like a boss.
-    init(instrument:String, location:Int, skillLevel:String, userName:String) {
+    init(instrument:String, location:Int, skillLevel:String, userName:String, profileID:String) {
         self.instrument = instrument
         self.location = location
         self.skillLevel = skillLevel
         self.userName = userName
+        self.profileID = profileID
     }
 }
 
-let userInfo = IncredibandOnboard(instrument: "?", location: 0, skillLevel: "?", userName: "?")
+let userInfo = IncredibandOnboard(instrument: "?", location: 0, skillLevel: "?", userName: "?", profileID: "?")
 
 class TestDataSource : NSObject {
-    
-    // 3
-    //let tipCalc = IncredibandOnboard(total: 33.25, taxPct: 0.06)
-    var possibleTips = Dictionary<Int, (tipAmt:Double, total:Double)>()
-    var sortedKeys:[Int] = []
-    
-    // 4
     override init() {
-        //possibleTips = tipCalc.returnPossibleTips()
-        sortedKeys = sorted(Array(possibleTips.keys))
         super.init()
     }
-    
 }

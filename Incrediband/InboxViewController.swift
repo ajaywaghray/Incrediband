@@ -66,7 +66,7 @@ class InboxViewController: UIKit.UIViewController, UITableViewDataSource, UITabl
                     label.text = "Casey"
                 }
                 if let label = inboxCell.userResultSkillLevel {
-                    label.text = "Advanced"
+                    label.text = "Expert"
                 }
                 if let image = inboxCell.userResultInstument {
                     image.image = UIImage(named: "rightsideimage")
@@ -98,7 +98,7 @@ class InboxViewController: UIKit.UIViewController, UITableViewDataSource, UITabl
                     label.text = "Mukul"
                 }
                 if let label = inboxCell.userResultSkillLevel {
-                    label.text = "Advanced"
+                    label.text = "Expert"
                 }
                 if let image = inboxCell.userResultInstument {
                     image.image = UIImage(named: "rightsideimage")
