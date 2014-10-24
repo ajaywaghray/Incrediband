@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		620302DB19F9D96900995A67 /* BLANCH_CONDENSED.otf in Resources */ = {isa = PBXBuildFile; fileRef = 620302DA19F9D96900995A67 /* BLANCH_CONDENSED.otf */; };
+		620302DE19F9DA8F00995A67 /* IncredibandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620302DD19F9DA8F00995A67 /* IncredibandViewController.swift */; };
+		620302E119F9DBA400995A67 /* IncredibandColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620302E019F9DBA400995A67 /* IncredibandColors.swift */; };
+		620302E419F9E6BD00995A67 /* LightLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620302E319F9E6BD00995A67 /* LightLabel.swift */; };
+		620302E619F9EC1A00995A67 /* LightTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 620302E519F9EC1A00995A67 /* LightTextView.swift */; };
 		626FBC8A19BD13D900662179 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626FBC8719BD13D900662179 /* Bolts.framework */; };
 		626FBC8B19BD13D900662179 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626FBC8819BD13D900662179 /* Parse.framework */; };
 		626FBC8C19BD13D900662179 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626FBC8919BD13D900662179 /* ParseFacebookUtils.framework */; };
@@ -51,6 +56,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		620302DA19F9D96900995A67 /* BLANCH_CONDENSED.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BLANCH_CONDENSED.otf; path = ../../../Downloads/Blanch_Personal_License/BLANCH_CONDENSED.otf; sourceTree = "<group>"; };
+		620302DD19F9DA8F00995A67 /* IncredibandViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncredibandViewController.swift; sourceTree = "<group>"; };
+		620302E019F9DBA400995A67 /* IncredibandColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IncredibandColors.swift; sourceTree = "<group>"; };
+		620302E319F9E6BD00995A67 /* LightLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightLabel.swift; sourceTree = "<group>"; };
+		620302E519F9EC1A00995A67 /* LightTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightTextView.swift; sourceTree = "<group>"; };
 		626FBC8719BD13D900662179 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		626FBC8819BD13D900662179 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		626FBC8919BD13D900662179 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
@@ -125,6 +135,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		620302D919F9D73200995A67 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				842D6C9019B18478008CFCFD /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		620302DC19F9DA6C00995A67 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				620302DD19F9DA8F00995A67 /* IncredibandViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		620302DF19F9DAF300995A67 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				620302E019F9DBA400995A67 /* IncredibandColors.swift */,
+			);
+			name = Styles;
+			sourceTree = "<group>";
+		};
+		620302E219F9E68F00995A67 /* StyleWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				620302E319F9E6BD00995A67 /* LightLabel.swift */,
+				620302E519F9EC1A00995A67 /* LightTextView.swift */,
+			);
+			name = StyleWidgets;
+			sourceTree = "<group>";
+		};
 		626FBC8619BD13D900662179 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,8 +216,11 @@
 		842D6C8719B18478008CFCFD /* Incrediband */ = {
 			isa = PBXGroup;
 			children = (
+				620302E219F9E68F00995A67 /* StyleWidgets */,
+				620302DF19F9DAF300995A67 /* Styles */,
+				620302DC19F9DA6C00995A67 /* ViewControllers */,
+				620302D919F9D73200995A67 /* Storyboards */,
 				842D6C8A19B18478008CFCFD /* AppDelegate.swift */,
-				842D6C9019B18478008CFCFD /* Main.storyboard */,
 				84D1C96B19F4EA7600B47EBB /* SkillLevelIntViewController.swift */,
 				84D1C96D19F4EA8A00B47EBB /* SkillLevelAdvViewController.swift */,
 				844EF72C19EF63F7002B8245 /* NewMessageViewController.swift */,
@@ -214,6 +260,7 @@
 		842D6C9D19B18478008CFCFD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				620302DA19F9D96900995A67 /* BLANCH_CONDENSED.otf */,
 				842D6C9E19B18478008CFCFD /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -302,6 +349,7 @@
 			files = (
 				842D6C9219B18478008CFCFD /* Main.storyboard in Resources */,
 				842D6C9419B18478008CFCFD /* Images.xcassets in Resources */,
+				620302DB19F9D96900995A67 /* BLANCH_CONDENSED.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,12 +368,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D1C96C19F4EA7600B47EBB /* SkillLevelIntViewController.swift in Sources */,
+				620302DE19F9DA8F00995A67 /* IncredibandViewController.swift in Sources */,
 				84D1C96E19F4EA8A00B47EBB /* SkillLevelAdvViewController.swift in Sources */,
 				841B914419BBA90900A9BA6C /* SkillLevelViewController.swift in Sources */,
 				8476537419DCF83100CCB338 /* ResultProfileViewController.swift in Sources */,
 				84C78A2819DA5D500085622C /* InboxViewController.swift in Sources */,
+				620302E619F9EC1A00995A67 /* LightTextView.swift in Sources */,
 				843F227819E99DD100F51DAE /* ConversationViewController.swift in Sources */,
+				620302E119F9DBA400995A67 /* IncredibandColors.swift in Sources */,
 				84B9D4CF19B96C34001610E1 /* WherePlayViewController.swift in Sources */,
+				620302E419F9E6BD00995A67 /* LightLabel.swift in Sources */,
 				84032C0819CA714000645AEB /* ProfileViewController.swift in Sources */,
 				8403161519CBE50500FB3D2C /* ResultsViewController.swift in Sources */,
 				842D6C8B19B18478008CFCFD /* AppDelegate.swift in Sources */,

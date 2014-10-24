@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A388b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2vg-9W-2ec">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2vg-9W-2ec">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="BLANCH_CONDENSED.otf">
+            <string>Blanch-Condensed</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Profile-->
         <scene sceneID="hNz-n2-bh7">
@@ -617,47 +623,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Q0x-8d-Qhr">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="-11" y="0.0" width="344" height="568"/>
-                                </variation>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_instruments" translatesAutoresizingMaskIntoConstraints="NO" id="ANr-zd-iqZ" userLabel="Incrediband">
+                                <rect key="frame" x="0.0" y="154" width="320" height="64"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJu-xM-bkh">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="40" y="482" width="239" height="45"/>
-                                </variation>
-                                <connections>
-                                    <action selector="buttonPressed:" destination="2vg-9W-2ec" eventType="touchDown" id="rxa-Ps-Ubs"/>
-                                    <segue destination="tBU-4Q-cPj" kind="show" identifier="" id="ypU-xE-h2H"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incrediband" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMU-ck-Qkc">
+                                <rect key="frame" x="39" y="220" width="242" height="88"/>
+                                <fontDescription key="fontDescription" name="Blanch-Condensed" family="Blanch" pointSize="80"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Find people to jam with and junk. I’m obviously not a copywriter." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="89Y-Is-JH2" customClass="LightTextView" customModule="Incrediband" customModuleProvider="target">
+                                <rect key="frame" x="26" y="292" width="268" height="75"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Xgb-Gm-2te"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pointSize">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We won’t post anything without your permission." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5n-I1-YJA" userLabel="We won’t post anything without your permission." customClass="LightLabel" customModule="Incrediband" customModuleProvider="target">
+                                <rect key="frame" x="16" y="533" width="288" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="pointSize">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wrv-iK-65s" customClass="FBLoginView">
+                                <rect key="frame" x="41" y="481" width="238" height="45"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="BLp-tQ-acM"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Q0x-8d-Qhr"/>
-                                <exclude reference="zJu-xM-bkh"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="Q0x-8d-Qhr"/>
-                                <include reference="zJu-xM-bkh"/>
-                            </mask>
-                        </variation>
+                        <constraints>
+                            <constraint firstItem="S5n-I1-YJA" firstAttribute="leading" secondItem="PfM-xN-196" secondAttribute="leadingMargin" id="4x9-QT-WA5"/>
+                            <constraint firstItem="mMU-ck-Qkc" firstAttribute="top" secondItem="ANr-zd-iqZ" secondAttribute="bottom" constant="2" id="HWg-Y8-6sV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="S5n-I1-YJA" secondAttribute="trailing" id="JSF-ev-fmb"/>
+                            <constraint firstItem="Rz4-Uq-PWQ" firstAttribute="top" secondItem="S5n-I1-YJA" secondAttribute="bottom" constant="20" id="JYt-2h-kin"/>
+                            <constraint firstItem="89Y-Is-JH2" firstAttribute="leading" secondItem="PfM-xN-196" secondAttribute="leadingMargin" constant="10" id="Loc-Th-cb9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ANr-zd-iqZ" secondAttribute="trailing" constant="-16" id="NXw-66-Kz3"/>
+                            <constraint firstItem="89Y-Is-JH2" firstAttribute="top" secondItem="mMU-ck-Qkc" secondAttribute="bottom" constant="-16" id="Tfd-AH-Sf8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wrv-iK-65s" secondAttribute="trailing" constant="25" id="UbS-tz-1Ki"/>
+                            <constraint firstAttribute="centerX" secondItem="ANr-zd-iqZ" secondAttribute="centerX" id="Uge-TW-edz"/>
+                            <constraint firstItem="ANr-zd-iqZ" firstAttribute="top" secondItem="i6y-GC-hJ4" secondAttribute="bottom" constant="134" id="UzL-7o-U6s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="89Y-Is-JH2" secondAttribute="trailing" constant="10" id="ZSK-yH-SQB"/>
+                            <constraint firstItem="Rz4-Uq-PWQ" firstAttribute="top" secondItem="Wrv-iK-65s" secondAttribute="bottom" constant="42" id="bd5-OG-UVZ"/>
+                            <constraint firstItem="ANr-zd-iqZ" firstAttribute="leading" secondItem="PfM-xN-196" secondAttribute="leadingMargin" constant="-16" id="dVb-AH-v6n"/>
+                            <constraint firstItem="Wrv-iK-65s" firstAttribute="leading" secondItem="PfM-xN-196" secondAttribute="leadingMargin" constant="25" id="paQ-zg-Iac"/>
+                            <constraint firstAttribute="centerX" secondItem="mMU-ck-Qkc" secondAttribute="centerX" id="qXn-LF-jE5"/>
+                        </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZW-q9-KOv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2817" y="0.0"/>
+            <point key="canvasLocation" x="-2860" y="78"/>
         </scene>
         <!--What Instrument View Controller-->
         <scene sceneID="UFW-JZ-CrS">
@@ -940,6 +972,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Qfr-S0-iwV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wNI-uj-Bhp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="advanced" translatesAutoresizingMaskIntoConstraints="NO" id="mQP-8h-oaX">
@@ -1174,7 +1207,7 @@
     </scenes>
     <resources>
         <image name="advanced" width="640" height="1136"/>
-        <image name="background" width="640" height="1136"/>
+        <image name="bg_instruments" width="235" height="64"/>
         <image name="first" width="30" height="30"/>
         <image name="instrumentBackground" width="640" height="1136"/>
         <image name="intermediate" width="640" height="1136"/>

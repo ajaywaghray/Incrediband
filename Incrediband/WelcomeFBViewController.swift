@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WelcomeFBViewController: UIViewController, FBLoginViewDelegate {
+class WelcomeFBViewController: IncredbandViewConteroller, FBLoginViewDelegate {
 
     @IBAction func buttonPressed(sender: AnyObject){
         FBSession.openActiveSessionWithReadPermissions(["public_profile"], allowLoginUI: true, completionHandler: {(session, state, error) -> Void in
