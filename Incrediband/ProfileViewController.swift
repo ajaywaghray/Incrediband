@@ -26,10 +26,10 @@ class ProfileViewController: UIViewController {
         userInstrument.text = userInfo.instrument
         
         // Loading an example image in profile image for now.
-        let url = NSURL.URLWithString("http://comedycentral.mtvnimages.com/images/shows/chappelle/videos/season_2/CHAPPELLE_02_0204_RICKJAMES_640x360.jpg?")
+        let url = NSURL(string: "http://comedycentral.mtvnimages.com/images/shows/chappelle/videos/season_2/CHAPPELLE_02_0204_RICKJAMES_640x360.jpg?")
         var err: NSError?
-        var imageData :NSData = NSData.dataWithContentsOfURL(url,options: NSDataReadingOptions.DataReadingMappedIfSafe, error: &err)
-        var bgImage = UIImage(data:imageData)
+        var imageData :NSData? = NSData(contentsOfURL: url!, options: NSDataReadingOptions.DataReadingMappedIfSafe, error: &err)
+        var bgImage = UIImage(data:imageData!)
         profilePhoto.image = bgImage
         
         
