@@ -30,6 +30,14 @@ extension UIColor {
         return UIColor(rgba: "#999999")
     }
     
+    class func colorDarkText() -> UIColor {
+        return UIColor.blackColor()
+    }
+    
+    class func colorDarkButtonText() -> UIColor {
+        return UIColor.whiteColor()
+    }
+    
     convenience init(rgba: String) {
         var red:   CGFloat = 0.0
         var green: CGFloat = 0.0

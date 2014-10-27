@@ -52,4 +52,8 @@ class WelcomeFBViewController: IncredbandViewConteroller, FBLoginViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func nextStoryboard() {
+        self.performSegueWithIdentifier("next", sender: nil)
+    }
+    
 }

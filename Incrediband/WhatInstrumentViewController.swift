@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WhatInstrumentViewController: UIViewController {
+class WhatInstrumentViewController: IncredbandViewConteroller {
     
     override func viewDidLoad() {
         super.viewDidLoad()
